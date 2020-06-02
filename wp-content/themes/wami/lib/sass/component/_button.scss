@@ -1,0 +1,120 @@
+.button{    
+    display: inline-block;
+    padding: 0 25px;
+    height: 35px;
+    line-height: 37px;
+    font-family: $avenir;
+    color: $white;
+    font-size: 12px;
+    text-transform: uppercase;
+    @include transition(all, 350ms);    
+    @include mobileScreen(){
+        height: auto;
+        padding: 12px 25px;
+        line-height: normal;
+    }    
+    //BUTTON COLORS
+    &.btn-accent{
+        background: $accent;
+        &.open_popin{
+            color: $white!important;
+            &.declare_vente{color: #000!important;}
+        }
+        &:hover{
+            background: lighten($accent, 8%);
+        }
+    }
+    &.btn-primary{
+        background: $primary;
+        &:hover{
+            background: lighten($primary, 8%);
+        }
+    }
+    &.btn-secondary{
+        background: $secondary;
+        &:hover{
+            background: lighten($secondary, 8%);
+        }
+    }    
+    &.btn-stoke{
+        border: 1px solid $white;
+        background: rgba(255,255,255,0);
+        
+        &:hover{
+            @include transform(none);
+            background: rgba(255,255,255,0.3);
+        }
+    }
+    //BUTTON MIDDLE-OFFICE
+    &.btn-md-office {
+        background: $black;
+
+        &:hover {
+            background: rgba(0,0,0,.6);
+        }
+    }  
+    //BUTTON ICO POSITION
+    &.ico-right{
+        position: relative;
+        padding-right: 50px;
+        
+        &::after{
+            content:'';
+            display: block;
+            width: 15px;
+            height: 100%;
+            position: absolute;
+            right: 25px;
+            top: 0;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+    &.ico-left{
+        position: relative;
+        padding-left: 50px;
+        
+        &::after{
+            content:'';
+            display: block;
+            width: 15px;
+            height: 100%;
+            position: absolute;
+            left: 25px;
+            top: 0;
+        }
+    }   
+    //BUTTON ICO STYLE
+    &.arrow-left{
+        &::after{
+            background-image: url('../img/ico/ico-arrow-left.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+    &.arrow-right{
+        &::after{
+            background-image: url('../img/ico/ico-arrow-right.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+    &.arrow-down{
+        &::after{
+            left: 20px;
+            background-image: url('../img/ico/ico-arrow-down.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+    &.arrow-download{
+        &::after{
+            background-image: url('../img/ico/ico-arrow-download.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+    &.btn-to-right{
+        float: right;
+    }
+}

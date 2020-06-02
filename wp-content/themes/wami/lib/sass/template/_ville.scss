@@ -1,0 +1,162 @@
+.tpl-ville{
+    
+    #city-infos{
+        position: relative;
+        padding: 10vh 0;
+        min-height: 60vh;
+        overflow: hidden;
+        
+        .bg-overlay{
+            overflow: hidden;
+            z-index: 1;
+            
+            img{
+                min-height: 100%;
+                min-width: 100%;
+                height: auto;
+                width: auto;
+                position: absolute;
+                top: -100%;
+                bottom: -100%;
+                left: -100%;
+                right: -100%;
+                margin: auto;
+            }
+        }
+        .w_grid{
+            position: relative;
+            z-index: 10;
+            
+            #back{
+                @extend .border-title;
+            }
+            
+            .adjust-size{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                
+                @include mobileScreen{
+                    display: block;
+                }
+                
+                .grid-col{
+                    position: relative;
+                }
+            }
+            
+            .detail-city{
+                @extend .title-m;
+                font-family: $avenir;
+                text-transform: none;
+                color: $white;
+                padding: $gutter;
+                background: $accent;
+                
+                h3{
+                    @extend .border-title;
+                    border-color: $white;
+                    text-transform: uppercase;
+                    font-family: $avenir;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+            }
+            
+            .city-name{
+                @extend .title-xl;
+                color: $primary;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                
+                @include mobileScreen{
+                    position: static;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    
+    #city-map{
+        display: block;
+        overflow: hidden;
+        
+        .w_grid{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            @include mobileScreen{
+                display: block;
+            }
+            
+            .scrollover{
+                max-height: 700px;
+                min-height: 500px;
+                overflow-y: scroll;
+                
+                @include mobileScreen{
+                    max-height:none;
+                    min-height: none;
+                    overflow: hidden;
+                }
+            }
+        }
+        
+        #map{
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            background: #999;
+        }
+        
+        #recommendations{
+            padding: 50px;
+
+            h3{
+                @extend .text-std, .border-title;
+                text-transform: uppercase;
+            }
+            
+            #recommendation-list{
+                
+                li{
+                    display: block;
+                    
+                    .adresse_hotspot, p, a{
+                        @extend .text-std;
+                        font-family: $avenir-medium;
+                        display: block;
+                        padding: 20px;
+                        color: $primary;
+                        border-bottom: 1px solid $white;
+                        @include transition(all, 350ms);
+                    
+                        &.active, &:hover{ 
+                            background: #fff;
+                        }
+                        
+                        span{
+                            font-family: $avenir;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #coupsdecoeur{
+        padding: 10vh 0;
+        overflow: hidden;
+        background: $fade-accent;
+    
+        h3{
+            @extend .title-m, .border-title;
+        }
+    }
+    
+}

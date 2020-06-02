@@ -1,0 +1,34 @@
+#share-part{
+    padding:10vh 0;
+    overflow:hidden;
+    background: $fade-attenuate;
+}
+#share-annonce{
+    text-align: center;
+
+    h3{
+        font-size: 24px;
+        color: $accent;
+        font-family: $avenir-heavy;
+        margin-bottom: 40px;
+    }
+    
+    #rs{
+        text-align: center;
+        
+        li{
+            display: inline-block;
+            margin-right: 25px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            a.rs-link{
+                display: block;
+                font-size: 28px;
+                color: $accent;
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+/* MIDDLEWARE LOGIN */
+
+#connection {
+
+	.connexion.connect {
+		margin: 20% 25%;
+		border: 1px solid #e8e7e6;
+		background-color: $white;
+		padding: 5%;
+
+		@include tabletScreen {
+			margin: 15%;
+		}
+
+		@include mobileScreen {
+			margin: 5% 0;
+		}
+
+		h4 {
+			margin-bottom: 20px;
+		}
+
+		.popin_log {
+			position: relative;
+			margin-bottom: 20px;
+
+			h4 {
+				color: red;
+			}
+
+			.close_popin {
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				cursor: pointer;
+			}
+
+		}
+
+		form {
+
+			input[type="text"], input[type="password"] {
+				padding: 0;
+				font-weight: bold;
+			}
+
+			label {
+				color: $accent;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+
+			.login-username {
+				margin-bottom: 20px;
+				border-bottom: 1px solid #e8e8e8;
+
+				@include mobileScreen {
+					margin-bottom: 50px;
+				}
+
+			}
+
+			.login-submit {
+				width: 120px;
+				margin: 0 auto;
+
+				input {
+					padding: 0;
+
+					@include mobileScreen {
+						padding: 12px 25px;
+					}
+
+				}
+
+				@include mobileScreen {
+					width: 190px;
+				}
+
+			}
+
+			.login-remember {
+				margin-bottom: 20px;
+				margin-top: 40px;
+
+				label {
+					padding-left: 20px;
+					position: relative;
+					color: $attenuate;
+
+					input[type="checkbox"] {
+						position: absolute;
+						left: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						height: 2px;
+						width: 2px;
+						padding: 1.5%;
+						border-radius: 50%;
+						background-color: $white;
+						border: 1px solid #e2e2e2;
+						-webkit-appearance: initial;
+						-moz-appearance: initial;
+						-o-appearance: initial;
+						appearance: initial;
+
+						@include mobileScreen {
+							padding: 2%;
+						}
+
+						&:checked {
+							background-color: #e2e2e2;
+						}
+
+					}
+
+				}
+
+				@include mobileScreen {
+					margin-bottom: 100px;
+				}
+
+			}			
+		}
+
+		.lost_password {
+			text-transform: uppercase;
+			font-weight: bold;
+			@include transform(translateX(calc(100% - 140px)) translateY(-70px));
+
+			a {
+				color: $black;
+			}
+
+			@include mobileScreen {
+				@include transform(translateX(0) translateY(-100px));
+			}
+
+		}
+	}
+}

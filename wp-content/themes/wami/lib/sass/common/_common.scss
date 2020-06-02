@@ -1,0 +1,105 @@
+body{
+    font-family: $avenir;
+    font-size: 12px;
+    background: $fade-attenuate;
+    padding-top: 75px;    
+    &.home{
+        padding-top: 0;
+    }
+    @include tabletScreen{
+        padding-top: 0;  
+    }
+}
+// Ajout d'un padding supplémentaire dans les blocs principaux du middle office !
+.middle_office{
+    padding-top: 75px;
+    @include tabletScreen {
+        padding-top: 200px;  
+    }
+}
+
+.bg-overlay{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hack-centered-content{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translateY(-50%) translateX(-50%));
+}
+
+.col_hack-padding{
+    padding-right: 0px;
+}
+
+.undisplay{display: none!important;}
+
+.mobile-only{
+    display: none;    
+    @include mobileScreen{
+        display: block;
+    }
+}
+
+.title-button{
+    .button{
+        @include transform(translateY(-15px));        
+        &:hover{
+            @include transform(translateY(-17px));
+        }
+    }
+}
+#annonces-filters .single-field input[type=submit]{
+    background: $secondary url(../img/ico/ico-arrow-right.png) center center no-repeat;
+}
+
+.loader{      
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;  
+    &.actif{  
+        z-index: 999;
+        opacity: 1;
+        visibility: visible;  
+        .fa, img{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            @include translate(-50%, -50%);
+            color: #fff;
+        }
+    }
+}
+
+.add_overflow{
+    overflow: hidden;
+}
+
+.no-link{
+    cursor: default!important;
+}
+
+.imprimerlannonce{
+    font-size: 0.8em !important;
+    float: right;
+}
+
+.white{color: #fff!important;}

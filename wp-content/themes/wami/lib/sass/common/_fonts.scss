@@ -1,0 +1,58 @@
+
+
+.title-xl{
+    font-weight: 400;
+    font-family: $blair;
+    font-size: 32px;
+
+    @include mobileScreen{
+        font-size: 24px;
+    }
+}
+
+.title-l{
+    font-weight: 400;
+    font-family: $blair;
+    font-size: 20px;
+
+}
+
+
+.title-m{
+    font-weight: 400;
+    font-family: $blair;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+.title-s{
+    font-weight: 400;
+    font-family: $blair;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+.text-std{
+    font-weight: 400;
+    font-family: $avenir;
+    font-size: 12px;
+    
+    @include tabletScreen{
+        font-size: 14px;
+    }
+}
+
+
+.text-highlight{
+    font-weight: 400;
+    font-family: $avenir;
+    font-size: 14px;
+}
+
+.border-title{
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $secondary;
+}
