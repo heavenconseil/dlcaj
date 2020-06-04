@@ -1,0 +1,124 @@
+.tpl-demandes-list {
+    #demandes_en_attentes{ background: $fade-accent; }
+    #demandes{ background: $primary; }
+	#demandes_en_attentes,
+	#demandes {
+		overflow: hidden;
+		.tpl-tripple {
+			padding-right: 50px;
+			.content_with_border {
+				padding-left: 0;
+				padding-top: 30px;
+				border-bottom: 1px solid $black;
+				position: relative;
+				overflow: hidden;
+				@include mobileScreen {
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+				.col_1{								
+					.nom {					
+						text-transform: uppercase;
+						font-weight: bold;
+						font-family: $blair;
+						display: block;
+						color: $black;
+						@include mobileScreen {
+							margin-bottom: 10px;
+						}
+					}
+				}
+				.col_2 {
+					transition: all .5s;					
+					.titre {
+						text-transform: uppercase;
+						color: $white;
+						margin-bottom: 5px;
+					}
+					a {
+						color: $black;
+					}
+					@include mobileScreen {
+						visibility: hidden;
+						height: 0;
+						opacity: 0;
+					}
+				}
+				.col_3 {
+					transition: all .5s;
+					.titre {
+						text-transform: uppercase;
+						color: $white;
+						margin-bottom: 5px;
+					}
+					@include mobileScreen {
+						visibility: hidden;
+						height: 0;
+						opacity: 0;
+					}
+				}					
+				.chevron {
+					position: absolute;
+					right: 0;	
+					top: 15%;
+					@include transform(translateY(-15%) rotate(135deg));
+					padding: 1%;
+					display: block;
+					transition: .5s;
+					@include mobileScreen {
+						top: 10px;
+						right: 5px;
+						@include transform(translateY(0) rotate(135deg));					
+					}
+					&::after {
+						content: "";
+						display: block;
+						width: 10px;
+						height: 10px;
+						border-width: 2px 2px 0 0;
+						border-style: solid;
+						border-color: $black;
+						@include mobileScreen  {
+							width: 8px;
+							height: 8px;
+						}
+					}
+				}
+				.first_bloc {
+					visibility: visible;
+					height: auto;
+					opacity: 1;
+				}
+				.sous_bloc {
+					visibility: hidden;
+					height: 0;
+					opacity: 0;
+					transition: all .5s;
+				}				
+				&.open {
+					.chevron {
+						@include transform(rotate(-45deg));
+					}					
+					.first_bloc {
+						visibility: hidden;
+						height: 0;
+						opacity: 0;
+						transition: all .5s;
+					}
+					.sous_bloc {
+						visibility: visible;
+						height: auto;
+						opacity: 1;
+					}
+					@include mobileScreen {
+						.col_2, .col_3 {
+							visibility: visible;
+							height: auto;
+							opacity: 1;
+						}
+					}
+				}	
+			}
+		}
+	}
+}

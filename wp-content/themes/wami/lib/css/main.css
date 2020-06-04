@@ -705,6 +705,9 @@ body.home {
 .button.btn-accent, form input[type=submit], fieldset input[type=submit] {
   background: #979d5d;
 }
+/*wami*/
+.acf-input input.hasDatepicker { background: #f0f0f0; }
+
 /* line 19, ../sass/component/_button.scss */
 .button.btn-accent.open_popin, form input.open_popin[type=submit], fieldset input.open_popin[type=submit] {
   color: #ffffff !important;
@@ -849,7 +852,10 @@ form input[type=submit].right-arrow, fieldset input[type=submit].right-arrow {
 /* line 34, ../sass/component/_form.scss */
 form select, fieldset select {
   padding-right: 40px;
-  background: #ffffff url(../img/ico/input-select-arrow.png) right 13px no-repeat;
+  /* wami */
+  background: #fcfaf5 url(../img/ico/input-select-arrow.png) right 13px no-repeat;
+  border:1px solid #383838;
+  border-right:0;
 }
 /* line 39, ../sass/component/_form.scss */
 form.single-field select,
@@ -858,6 +864,10 @@ fieldset.single-field input {
   display: block;
   float: left;
   width: 87%;
+  /* wami */
+  background: #fcfaf5;
+  border:1px solid #383838;
+  border-right:0;
 }
 /* line 45, ../sass/component/_form.scss */
 form.single-field input[type=submit], fieldset.single-field input[type=submit] {
@@ -881,6 +891,10 @@ form.single-line input[type=number], fieldset.single-line input[type=number] {
   -webkit-appearance: none !important;
   margin: 0 !important;
   -moz-appearance: textfield !important;
+  /* wami */
+  background: #fcfaf5;
+  border:1px solid #383838;
+  border-right:0;
 }
 @media screen and (max-width: 700px) {
   /* line 62, ../sass/component/_form.scss */
@@ -3216,7 +3230,7 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 .home #map-country .w_grid {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  min-height: 550px;
+  min-height: 665px;
   overflow: hidden;
 }
 /* line 98, ../sass/template/_homepage.scss */
@@ -3453,7 +3467,8 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 /* line 289, ../sass/template/_homepage.scss */
 .home #annonces {
   padding: 10vh 0;
-  background: #cbcead;
+  /* wami background: #cbcead; */
+  background: #fff;
   overflow: hidden;
 }
 /* line 297, ../sass/template/_homepage.scss */
@@ -3637,7 +3652,8 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 /* line 3, ../sass/template/_annonces-list.scss */
 .tpl-annonces-list #annonces {
   padding: 10vh 0;
-  background: #cbcead;
+  /* wami background: #cbcead; */
+  background: #fff;
   overflow: hidden;
 }
 /* line 9, ../sass/template/_annonces-list.scss */
@@ -3739,7 +3755,7 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 /* line 3, ../sass/template/_single-annonce.scss */
 .single-annonce #list-info {
   padding: 60px 0 20px;
-  background: #f2efea;
+  /* wami background: #f2efea; */
 }
 /* line 10, ../sass/template/_single-annonce.scss */
 .single-annonce #annonce-slider-photos {
@@ -4694,7 +4710,8 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 /* line 139, ../sass/template/_single-ambassador.scss */
 .single-ambassador #annonces {
   padding: 10vh 0;
-  background: #cbcead;
+  /* wami background: #cbcead; */
+  background: #fff;
 }
 /* line 145, ../sass/template/_single-ambassador.scss */
 .single-ambassador #annonces p {
@@ -4704,7 +4721,8 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 /* line 1, ../sass/template/_page.scss */
 #main {
   padding: 50px 0;
-  background: #cbcead;
+  /* wami background: #cbcead; */
+  background: #fff;
 }
 /* line 5, ../sass/template/_page.scss */
 #main .page-content {
@@ -5076,7 +5094,8 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 /* line 271, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media {
   padding: 10vh 0;
-  background: #cbcead;
+  /* background: #cbcead; */
+  background: #fcfaf5;
   overflow: hidden;
 }
 /* line 280, ../sass/template/_philosophie.scss */

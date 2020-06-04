@@ -1,0 +1,83 @@
+.tpl-annonces-list{
+    
+    #annonces{
+        padding: 10vh 0;
+        background: $fade-accent;
+        overflow:hidden;
+    }
+
+    #annonces-filters{
+        @extend .border-title;
+        white-space:nowrap;
+        overflow:hidden;
+        
+        fieldset{
+            @include tabletScreen{
+                display: block;
+                margin-bottom: 20px;
+                
+                &.align-right{
+                    text-align: left;
+                }
+            }
+        }
+        
+        .single-line{
+            white-space:nowrap;
+            overflow:hidden;
+            font-size: 0;
+            
+            input[type="submit"]{
+                text-transform: uppercase;
+                font-family: $avenir-heavy;
+            }
+        }
+    }
+    
+    .city-highlight{
+        position: relative;
+        display: block;
+        min-height: 330px;
+        text-align: center;
+        color: $white;
+        background: $primary;
+        overflow: hidden;
+        
+        .bg-overlay{
+            opacity: 0.5;
+            z-index: 1;
+            
+            img{
+                min-height: 100%;
+                min-width: 100%;
+                height: auto;
+                width: auto;
+                position: absolute;
+                top: -100%;
+                bottom: -100%;
+                left: -100%;
+                right: -100%;
+                margin: auto;
+            }
+        }
+        .hack-centered-content{z-index: 3;}
+        
+        h1{
+            @extend .title-xl;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            
+            @include mobileScreen{
+                font-size: 24px;
+            }
+        }
+        
+        p{
+            @extend .title-m;
+            font-family: $avenir-medium;
+            text-transform: none;
+            margin-bottom: 30px;
+        }
+    }
+    
+}

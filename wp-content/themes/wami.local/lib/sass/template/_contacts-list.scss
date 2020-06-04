@@ -1,0 +1,31 @@
+.tpl-contacts-list{    
+    #contacts{
+        padding: 10vh 0;
+        background: $fade-accent;
+        overflow:hidden;
+    }
+    #contacts-filters{
+        @extend .border-title;
+        white-space:nowrap;
+        overflow:hidden;        
+        fieldset{
+            @include tabletScreen{
+                display: block;
+                margin-bottom: 20px;                
+                &.align-right{
+                    text-align: left;
+                }
+            }
+        }        
+        .single-line{
+            white-space:nowrap;
+            overflow:hidden;
+            font-size: 0;
+            
+            input[type="submit"]{
+                text-transform: uppercase;
+                font-family: $avenir-heavy;
+            }
+        }
+    } 
+}

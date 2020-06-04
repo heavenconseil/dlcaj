@@ -87,7 +87,7 @@ if( in_array('administrator', $user->roles) || in_array('ambassadeur', $user->ro
                                     <p>Statisques</p>
                                 </div> -->
                             </div>
-                            <div class="bloc_with_ancres <?php if($bloc_actif == 'bloc-vente') echo 'open  open-sub-menu-ancres'; else echo 'close'; ?> hide_for_mandatrecherche_or_delegationmandat<?php echo' '.$class_for_type_mandat; ?>" data-open="bloc-vente">
+                            <div class="bloc_with_ancres <?php if($bloc_actif == 'bloc-vente') echo 'open  open-sub-menu-ancres'; else echo 'close'; ?> hide_for_delegationmandat" data-open="bloc-vente">
                                 <a href="?bloc=bloc-vente" class="titre_bloc_with_ancres button btn-accent"><span class="numero_bulle">3</span> Vente</a>
                                 <div class="bloc_ancres">
                                     <a class="ancredouce" href="#section_contact_acheteur">Contact de l'acheteur</a>
@@ -114,7 +114,7 @@ if( in_array('administrator', $user->roles) || in_array('ambassadeur', $user->ro
                             </div>
                             
                             <?php // if(get_query_var('page')) ?>
-                                <a href='#diffusion-annonce' class='button btn-primary open_popin' data-openpopin='diffusion-annonce'>Diffusion de votre annonce</a>                   
+                                <a href='#diffusion-annonce' class='button btn-primary open_popin hide_for_mandatrecherche_or_delegationmandat<?php echo' '.$class_for_type_mandat; ?>' data-openpopin='diffusion-annonce'>Diffusion de votre annonce</a>                   
                         </div>
 
                         <div class="grid-col col_size-9 tablet_size-9 mobile_size-12 annonce-add"> 

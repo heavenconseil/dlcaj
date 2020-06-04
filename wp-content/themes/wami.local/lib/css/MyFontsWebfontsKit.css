@@ -1,0 +1,136 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3374053, 2017-04-13T09:35:42-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed ../Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AvenirLTPro-Medium by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/avenir-pro/pro-65-medium/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * Webfont: AvenirLTPro-BookOblique by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/avenir-pro/pro-45-book-oblique/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * Webfont: AvenirLTPro-Book by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/avenir-pro/pro-45-book/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * Webfont: AvenirLTPro-MediumOblique by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/avenir-pro/pro-65-medium-oblique/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * Webfont: AvenirLTPro-Heavy by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/avenir-pro/pro-85-heavy/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * Webfont: AvenirLTPro-HeavyOblique by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/avenir-pro/pro-85-heavy-oblique/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * Webfont: ITCBlair-Medium by ITC
+ * URL: http://www.myfonts.com/fonts/itc/blair/itc-blair-medium/
+ * Copyright: Copyright &#x00A9; 1997-2016 Monotype Imaging Inc. All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3374053
+ * Licensed pageviews: 250,000
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/337be5");
+
+  
+@font-face {font-family: 'AvenirLTPro-Medium';src: url('../webfonts/337BE5_0_0.eot');src: url('../webfonts/337BE5_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/337BE5_0_0.woff2') format('woff2'),url('../webfonts/337BE5_0_0.woff') format('woff'),url('../webfonts/337BE5_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTPro-BookOblique';src: url('../webfonts/337BE5_1_0.eot');src: url('../webfonts/337BE5_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/337BE5_1_0.woff2') format('woff2'),url('../webfonts/337BE5_1_0.woff') format('woff'),url('../webfonts/337BE5_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTPro-Book';src: url('../webfonts/337BE5_2_0.eot');src: url('../webfonts/337BE5_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/337BE5_2_0.woff2') format('woff2'),url('../webfonts/337BE5_2_0.woff') format('woff'),url('../webfonts/337BE5_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTPro-MediumOblique';src: url('../webfonts/337BE5_3_0.eot');src: url('../webfonts/337BE5_3_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/337BE5_3_0.woff2') format('woff2'),url('../webfonts/337BE5_3_0.woff') format('woff'),url('../webfonts/337BE5_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTPro-Heavy';src: url('../webfonts/337BE5_4_0.eot');src: url('../webfonts/337BE5_4_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/337BE5_4_0.woff2') format('woff2'),url('../webfonts/337BE5_4_0.woff') format('woff'),url('../webfonts/337BE5_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTPro-HeavyOblique';src: url('../webfonts/337BE5_5_0.eot');src: url('../webfonts/337BE5_5_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/337BE5_5_0.woff2') format('woff2'),url('../webfonts/337BE5_5_0.woff') format('woff'),url('../webfonts/337BE5_5_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ITCBlair-Medium';src: url('../webfonts/337BE5_6_0.eot');src: url('../webfonts/337BE5_6_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/337BE5_6_0.woff2') format('woff2'),url('../webfonts/337BE5_6_0.woff') format('woff'),url('../webfonts/337BE5_6_0.ttf') format('truetype');}
+
+
+        @font-face {
+            font-family: 'Akrobat-Black';          
+            src: url('../webfonts/Akrobat-Black.eot');
+            src: url('../webfonts/Akrobat-Black.eot?#iefix') format('embedded-opentype'),   
+                 url('../webfonts/Akrobat-Black.woff2') format('woff2'), 
+                 url('../webfonts/Akrobat-Black.woff') format('woff'), 
+                 url('../webfonts/Akrobat-Black.ttf') format('truetype'); 
+        }
+        @font-face {
+            font-family: 'Akrobat-Bold';  
+            src: url('../webfonts/Akrobat-Bold.eot');
+            src: url('../webfonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'),            
+                 url('../webfonts/Akrobat-Bold.woff2') format('woff2'), 
+                 url('../webfonts/Akrobat-Bold.woff') format('woff'), 
+                 url('../webfonts/Akrobat-Bold.ttf') format('truetype'); 
+        }
+        @font-face {
+            font-family: 'Akrobat-ExtraBold'; 
+            src: url('../webfonts/Akrobat-ExtraBold.eot');
+            src: url('../webfonts/Akrobat-ExtraBold.eot?#iefix') format('embedded-opentype'),             
+                 url('../webfonts/Akrobat-ExtraBold.woff2') format('woff2'), 
+                 url('../webfonts/Akrobat-ExtraBold.woff') format('woff'), 
+                 url('../webfonts/Akrobat-ExtraBold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Akrobat-ExtraLight';   
+            src: url('../webfonts/Akrobat-ExtraLight.eot');
+            src: url('../webfonts/Akrobat-ExtraLight.eot?#iefix') format('embedded-opentype'),           
+                 url('../webfonts/Akrobat-ExtraLight.woff2') format('woff2'), 
+                 url('../webfonts/Akrobat-ExtraLight.woff') format('woff'), 
+                 url('../webfonts/Akrobat-ExtraLight.ttf') format('truetype'); 
+        }
+        @font-face {
+            font-family: 'Akrobat-Light';    
+            src: url('../webfonts/Akrobat-Light.eot');
+            src: url('../webfonts/Akrobat-Light.eot?#iefix') format('embedded-opentype'),          
+                 url('../webfonts/Akrobat-Light.woff2') format('woff2'), 
+                 url('../webfonts/Akrobat-Light.woff') format('woff'), 
+                 url('../webfonts/Akrobat-Light.ttf') format('truetype'); 
+        }
+        @font-face {
+            font-family: 'Akrobat-Regular';   
+            src: url('../webfonts/Akrobat-Regular.eot');
+            src: url('../webfonts/Akrobat-Regular.eot?#iefix') format('embedded-opentype'),          
+                 url('../webfonts/Akrobat-Regular.woff2') format('woff2'), 
+                 url('../webfonts/Akrobat-Regular.woff') format('woff'), 
+                 url('../webfonts/Akrobat-Regular.ttf') format('truetype'); 
+        }
+        @font-face {
+            font-family: 'Akrobat-SemiBold';  
+            src: url('../webfonts/Akrobat-SemiBold.eot');
+            src: url('../webfonts/Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'),            
+                 url('../webfonts/Akrobat-SemiBold.woff2') format('woff2'), 
+                 url('../webfonts/Akrobat-SemiBold.woff') format('woff'), 
+                 url('../webfonts/Akrobat-SemiBold.ttf') format('truetype'); 
+        }
+        @font-face {
+            font-family: 'Akrobat-Thin'; 
+            src: url('../webfonts/Akrobat-Thin.eot');
+            src: url('../webfonts/Akrobat-Thin.eot?#iefix') format('embedded-opentype'),             
+                 url('../webfonts/Akrobat-Thin.woff2') format('woff2'), 
+                 url('../webfonts/Akrobat-Thin.woff') format('woff'), 
+                 url('../webfonts/Akrobat-Thin.ttf') format('truetype'); 
+        }
+ 

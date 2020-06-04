@@ -93,6 +93,11 @@ jQuery(function($){
         } else {
             $('.hide_for_mandatrecherche_or_delegationmandat').show().css('display', 'block');
         }
+        if(type_mandat =="mandat_delegation" ){
+            $('.hide_for_delegationmandat').hide();
+        } else {
+            $('.hide_for_delegationmandat').show().css('display', 'block');
+        }
     });
 
 

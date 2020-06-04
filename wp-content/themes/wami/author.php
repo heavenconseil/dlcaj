@@ -17,7 +17,9 @@
 							    	endif; ?>		                            
 		                        </div>
 		                        <h1><?php echo $a->data->display_name; ?></h1>
-		                        <p><?php echo (isset($a->roles) && is_array($a->roles)) ? $a->roles[0] : ""; ?></p>
+		                        <p><?php //echo (isset($a->roles) && is_array($a->roles)) ? $a->roles[0] : ""; 
+                                echo (isset($a->roles) && is_array($a->roles)) ? "Consultant(e)" : "";
+		                        ?></p>
 		                        <p><?php $region_amb = get_field('ambassadeur_region', 'user_'.$a->ID);
                     			echo (isset($region_amb) && is_array($region_amb)) ? $region_amb['label']: ""; ?>
 		                        </p>
