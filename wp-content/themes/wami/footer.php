@@ -1,5 +1,5 @@
 
-    <?php if( !is_single() && !is_page_template('tpl-devenirambassadeur.php') ) : ?>
+    <?php  /*if( !is_single() && !is_page_template('tpl-devenirambassadeur.php') ) : ?>
 	    <section id="facebook-posts">
 	        <div class="w_grid limited-content">			
 	            <?php $args = array(
@@ -22,9 +22,15 @@
 	       		<?php endif; ?>
 		    </div>   
 	    </section>
-	<?php endif; ?>
+	<?php endif;*/ ?>
 	
-
+	<?php if( !is_single() && !is_page_template('tpl-devenirambassadeur.php') ) : ?>
+	    <section id="facebook-posts">
+	        <div class="w_grid limited-content">
+		            <?php echo do_shortcode("[instagram-feed]"); ?>
+		    </div>   
+	    </section>
+	<?php endif; ?>
 
     <footer id="footer">
     

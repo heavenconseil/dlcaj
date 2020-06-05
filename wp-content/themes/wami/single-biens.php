@@ -192,7 +192,7 @@ $type_mandat 				= get_field('bien_mandat') ? get_field('bien_mandat') : false; 
 		                                	else echo '<img alt="avatar" src="http://placehold.it/60x60&text=avatar">'; ?>
 		                                </div>
 		                                <h3><?php echo get_the_author(); ?></h3>
-		                                <h4>Ambassadeur en charge</h4>
+		                                <h4>Consultant(e) en charge</h4>
 		                            </header>
 		                            <article>
 		                            	<a href='#demande_rappel' class='open_popin' data-openpopin='demande_rappel'><?php echo get_field("ambassadeur_mail", "user_".$author_id) ? get_field("ambassadeur_mail", "user_".$author_id) : ""; ?></a>

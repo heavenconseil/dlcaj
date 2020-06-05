@@ -1,0 +1,180 @@
+.page-template-tpl-contact{    
+    #contact-form{
+        padding:10vh 0;
+        overflow: hidden;        
+        .button{
+            margin-bottom: 40px;
+        }        
+        h1{
+            @extend .title-l, .border-title;
+            text-transform: uppercase;
+        }        
+        h2{
+            @extend .title-m, .border-title;
+        }        
+        .wpcf7{
+            overflow: hidden;
+            margin-bottom: 60px;            
+            fieldset{
+                @include tabletScreen{
+                    margin-bottom: 20px;
+                }
+            }
+            input{margin-bottom: 20px;}
+            input[type="submit"]{
+                display: inline-block;
+                width: auto;
+            }            
+            textarea{
+                width: 100%;
+                padding: 30px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                resize:vertical;
+                min-height: 308px;
+            }            
+            /* chackbox "etre rappelé" */
+            .wpcfcheck{
+                padding-top: 50px;                
+                p{
+                    width: 100%;
+                    height: 35px;
+                    padding: 0 12px;
+                    margin-bottom: 20px;
+                    line-height: 35px;
+                    box-sizing: border-box;
+                    background: $white;
+                }                
+                label{
+                    display: block;
+                    width: 100%;
+                    color: $secondary;
+                    cursor: pointer;
+                    span{
+                        display: inline-block;
+                        input[type="checkbox"]{
+                            display: inline-block;
+                            width: 13px;
+                            max-width: 13px;
+                            height: 12px;
+                            padding: 0;
+                            margin-right: 10px;
+                            //text-indent: -9999px;
+                            overflow: hidden;
+                            background: #fff;
+                            border: 1px solid $secondary;
+                            margin-bottom: 0;
+                            &:checked{
+                                background: $accent;
+                                border-color: $attenuate;
+                            }
+                        }
+                        .wpcf7-list-item-label{font-size: 0;}
+                    }
+                }
+            }
+            
+            /* Horaires radios buttons */
+            .horaire{
+                display: block;
+                width:100%;                
+                .wpcf7-radio{
+                    display: block;
+                    width: 100%;                    
+                    .wpcf7-list-item{
+                        display: block;
+                        position: relative;
+                        float: left;
+                        margin: 0;
+                        width: 33%;
+                        height: 35px;
+                        margin-right: 0.33%;
+                        box-sizing: border-box;                        
+                        input[type="radio"]{
+                            position: absolute;
+                            top: 0;right: 0;bottom: 0;left: 0;
+                            background: #fff;
+                            z-index: 1;
+                            cursor: pointer;
+                            // -webkit-appearance: radio;
+                            // -moz-appearance: radio;
+                            // appearance: radio;                            
+                            &:checked{background: $accent;}                            
+                        }
+                        span{
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            z-index: 2;
+                            @include transform(translateX(-50%) translateY(-50%));
+                            pointer-events: none;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }        
+        
+        #direct-contact{
+            @extend .title-m;
+            text-transform: none;
+            font-family: $avenir;
+            overflow: hidden;            
+            h4{
+                @extend .title-m;
+                font-family: $avenir-medium;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }            
+            .direct-contact-container{
+                margin-bottom: 40px;
+                line-height: 22px;
+            }        
+            .contact-avatar{
+                display: block;
+                width: 100%;
+                overflow: hidden;
+                @include border-radius(50%);            
+                @include mobileScreen{
+                    width: 50%;
+                    margin: 0 auto 30px;
+                }                
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }   
+    }    
+}
+
+.browser-firefox, .browser-msie{
+    input[type="checkbox"]{
+        -moz-appearance: checkbox;
+        appearance: checkbox;
+    }
+    input[type="radio"]{
+        -moz-appearance: radio;
+        appearance: radio;
+    }
+    #contact-form .wpcf7 .horaire .wpcf7-radio .wpcf7-list-item input[type="radio"]{
+        width: 12px;
+        left: 20px;
+        background:transparent;        
+        &:checked{
+            background:transparent;
+        }
+    }    
+    #contact-form .wpcf7 .horaire .wpcf7-radio .wpcf7-list-item span{
+        left: 40px;
+        @include transform(translateX(0) translateY(-50%));
+    }
+}
+
+
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ok {
+    clear: both;
+}

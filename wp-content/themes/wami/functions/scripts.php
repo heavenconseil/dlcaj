@@ -27,7 +27,7 @@ function wami_theme_enqueue_script(){
 	wp_enqueue_script('jquery-mobile-events', $theme_dir.'/lib/js/jquery-mobile-events/jquery-mobile-events.js', array('jquery'), '', $in_footer);
 	wp_enqueue_script('wami-jquery-lightbox', $theme_dir.'/lib/js/wami-jquery-lightbox/wami-jquery-lightbox.js', array('jquery', 'jquery-mobile-events'), '', $in_footer);
 
-	if(defined('GOOGLE_API_KEY')) wp_enqueue_script('googlemap', 'https://maps.googleapis.com/maps/api/js?key='.GOOGLE_API_KEY, false, '', $in_footer); // Local
+	wp_enqueue_script('googlemap', 'https://maps.googleapis.com/maps/api/js?key='.GOOGLE_API_KEY, false, '', $in_footer); // Local
 	//wp_enqueue_script('googlemap', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB1WS3VkEJmZJlQS6Uz-msTEShNWfT3Lq4', false, '', $in_footer); // Prod
 	//wp_enqueue_script('markerclusterer', $theme_dir.'/lib/js/map/markerclusterer_compiled.js', false, '', $in_footer);
 	wp_enqueue_script('markerclusterer', $theme_dir.'/lib/js/map/markerclusterer.js', false, '', $in_footer);

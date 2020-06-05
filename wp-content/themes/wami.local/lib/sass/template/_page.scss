@@ -1,0 +1,82 @@
+#main{
+    padding: 50px 0;
+    background: $fade-accent;
+    
+    .page-content{
+        padding: 30px $gutter;
+        background: #fff;
+        
+        h1{
+            @extend .title-m, .border-title;
+        }
+        
+        h2{
+            @extend .text-highlight;
+            text-transform: uppercase;
+            font-family: $avenir-heavy;
+            margin-bottom: 15px;
+        }
+        
+        h3{
+            @extend .text-highlight;
+            font-family: $avenir-heavy;
+            margin-bottom: 15px;
+        }
+        
+        p{
+            @extend .text-highlight;
+            max-width: 740px;
+            margin-bottom: 20px;
+        }
+    }
+}
+#sitemap{
+    padding: 0 0 0 $gutter;
+    overflow: hidden;
+    
+    @include mobileScreen{
+        padding: 0 0 0 $mobileGutter;
+    }
+    
+    .menu-plan-du-site-container{
+        @extend .title-s;
+        text-transform: uppercase;
+        font-family: $avenir-heavy;
+        
+        li{
+            display: block;
+            margin-bottom: 20px;
+            
+            a{
+                display: block;
+                color: $primary;
+
+            }
+            .sub-menu li {
+                margin-bottom: 0;
+                
+                a{
+                    color: $grey-mid;
+                    font-family: $avenir-medium;
+                }
+            }
+        }
+    }
+}
+
+.page-template-default #main .page-content {
+  width:65%;
+  margin: auto;
+  
+  p {
+    font-size:16px;
+    text-align:justify;
+  }
+  
+  h4, h3, h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+  }
+  
+}

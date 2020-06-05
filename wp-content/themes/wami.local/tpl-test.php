@@ -1,0 +1,1 @@
+<?php echo get_mandat('1847'); ?>

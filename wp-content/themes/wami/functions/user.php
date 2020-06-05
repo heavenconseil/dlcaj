@@ -11,11 +11,11 @@ function gere_new_roles() {
         remove_role("temoin");     
         //add_role( "temoin", "Témoin", array( 'read' => true, 'edit_dashboard' => true ) ); 
         // remove_role("ambassadeur");
-        add_role( "ambassadeur", "Ambassadeur",  array( 
+        add_role( "ambassadeur", "Consultant",  array( 
             'read' => false, 
             'edit_dashboard' => false 
         ));    
-        add_role('ambassadeur_responsable_de_region', 'Ambassadeur Responsable Région', array( 
+        add_role('ambassadeur_responsable_de_region', 'Consultant Responsable Région', array( 
             'read' => false, 
             'edit_dashboard' => false, 
             'level_1' => true 

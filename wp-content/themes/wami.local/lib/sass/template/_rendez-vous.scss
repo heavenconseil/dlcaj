@@ -1,0 +1,107 @@
+#workshop{
+    display: block;
+    overflow: hidden;
+    padding: 10vh 0;
+    background: $fade-accent;
+    
+    h1{
+        @extend .title-m, .border-title;
+        
+        .button{
+            @include mobileScreen{
+                display: none;
+            }
+        }
+    }
+    
+    .intro, .cta{
+        @extend .title-m;
+        font-family: $avenir;
+        text-transform: none;
+        width: 100%;
+        max-width: 295px;
+        margin-bottom: 60px;
+        
+        @include mobileScreen{
+            margin-bottom: 20px;
+        }
+    }
+    .cta{
+        float: right;
+        text-align: right;
+        max-width: 220px;
+        
+        @include mobileScreen{
+            text-align: left;
+            float: none;
+        }
+    }
+    
+    .button.mobile-only{
+        display: none;
+        margin-bottom: 60px;
+        
+        @include mobileScreen{
+            display: inline-block;
+        }
+    }
+    
+    .workshop-filters{
+        padding-right: $gutter;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        
+        .filter-container{
+            @extend .border-title;
+            overflow: hidden;
+            
+            input{
+                @include mobileScreen{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+#ambassadors{
+    overflow: hidden;
+    padding: 10vh 0;
+    background: $fade-attenuate;
+    
+    h2{
+        @extend .title-m, .border-title;
+    }
+    
+    .ambassadors-list{
+        position: relative;
+        
+        .ambassador{
+            padding: 0 25px;
+        }
+
+        .owl-nav{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+            
+            .owl-prev, .owl-next{
+                pointer-events:auto;
+                display: block;
+                width: 10px;
+                height: 13px;
+                text-indent: -9999px;
+                overflow: hidden;
+                background: transparent url('../img/ico/sprite-slider-arrow.png') top left no-repeat;
+            }
+            .owl-next{
+                float: right;
+                background-position: top right;
+            }
+        }
+    }
+    
+}

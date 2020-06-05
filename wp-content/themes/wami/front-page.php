@@ -36,11 +36,15 @@
         </div-->
     </section>
 
-
+    <?php /*
     <section id="map-country">
         <?php get_template_part('page_part/page-part', 'carte'); ?>
     </section>
-
+    */ ?>
+    
+    <section id="map-country" style="background-image:url('https://www.delacouraujardin.com/wp-content/themes/wami/lib/img/bg/bg-solidaire.jpg');background-size:cover;background-blend-mode:screen;">
+        <?php get_template_part('page_part/page-part', 'carteremplace'); ?>
+    </section>
 
     <section id="annonces">
         <div class="w_grid limited-content">
