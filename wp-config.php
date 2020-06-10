@@ -92,3 +92,7 @@ if ( !defined('ABSPATH') )
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/* Add wami for google api key */
+define('GOOGLE_API_KEY', 'AIzaSyAg7Gz9DDNXsqwzDlvJKOC-hc7cOJTNivI'); // local
+//define('GOOGLE_API_KEY', 'AIzaSyB1WS3VkEJmZJlQS6Uz-msTEShNWfT3Lq4'); // Prod
