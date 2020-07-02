@@ -42,51 +42,9 @@ function wami_mandat_trie_par_and_load_more(){
                 'posts_per_page'    => $qte_post,
             );
 
-            if($tpl == 'mandats' /*|| $tpl == 'annonces'*/){
+            if($tpl == 'mandats'){
                 $args['post_status'] = array('publish', 'draft', 'pending');
             }
-            // En fonction de la page on modifie les arg de recherche de base
-            /*if($tpl == 'mandats'){
-                $args['meta_query'] = array( 
-                    'relation'  => 'AND', 
-                    array(
-                        'key'       => 'lien_mandat',
-                        'value'     => '',
-                        'compare'   => '!='
-                    ),             
-                    array(
-                        'key'       => 'bien_vente_vendu',
-                        'value'     => 0,
-                        'compare'   => '='
-                    )          
-                );
-            }*/
-            /*if($tpl == 'annonces') {
-                $args['post_status'] = 'publish'; 
-                $args['meta_query']  = array( 
-                    'relation'  => 'AND',                  
-                    array(
-                        'key'       => 'bien_disponible',
-                        'value'     => 1,
-                        'compare'   => '='
-                    ),
-                    array(
-                        'key'       => 'lien_mandat',
-                        'value'     => '',
-                        'compare'   => '!='
-                    ),  
-                    array(
-                        'key'       => 'bien_vente_date_signature_promesse',
-                        'value'     => '',
-                        'compare'   => '='
-                    ),              
-                    array(
-                        'key'       => 'bien_vente_vendu',
-                        'value'     => 0,
-                        'compare'   => '='
-                    ),
-                );
-            }*/
             if($tpl == 'dossiers-de-vente') {
                 $args['post_status'] = 'publish'; 
                 $args['meta_query']  = array( 
@@ -126,7 +84,8 @@ function wami_mandat_trie_par_and_load_more(){
             }
             if($trie_par == 'ID'){
                 $args['meta_key']    = 'bien_ref';
-                $args['orderby']     = 'meta_value';
+                $args['meta_type']   = 'NUMERIC';
+                $args['orderby']     = 'meta_value_num';
                 $args['order']       = 'DESC';
             }
             else if($trie_par == 'date'){
@@ -144,7 +103,14 @@ function wami_mandat_trie_par_and_load_more(){
                 $args['order']       = 'ASC';
             } 
 
-            $query_biens = new WP_Query( $args );  //debug($query_biens->request);
+            $query_biens = new WP_Query( $args ); 
+            /*$vars = $query_biens->query_vars;
+            foreach($vars as $k=>$v){
+                if($k=="orderby") $query_biens->set('orderby', $args['orderby']);//$v = $args['orderby'];
+            }
+            //debug($vars['orderby'], $args['orderby']); 
+            //debug($query_biens); */
+           
             if($query_biens->have_posts()) : ?>
                 <?php while($query_biens->have_posts()) :
                     $query_biens->the_post(); ?>

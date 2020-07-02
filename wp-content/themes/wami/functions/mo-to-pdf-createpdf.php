@@ -150,7 +150,8 @@ function get_mandat($mandat_id, $agent_id){
         $sous_titre     = "<span class='big'>ET DE NEGOCIATION EXCLUSIF</span>";
     elseif($type_mandat['value']=='mandat_delegation') : 
         $titre          = "DELEGATION DE MANDAT";
-        $sous_titre     = "";
+        $sous_titre     = "";        
+        $ref_mandat     = "...";
     elseif($type_mandat['value']=='mandat_exigence') : 
         $titre          = "MANDAT EXIGENCE UN MOIS";
         $sous_titre     = "MANDAT EXCLUSIF DE VENTE AVEC FACULTÉ DE RÉTRACTATION";

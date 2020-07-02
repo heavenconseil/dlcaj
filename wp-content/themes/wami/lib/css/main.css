@@ -489,7 +489,9 @@ ul, li {
 body {
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
   font-size: 12px;
-  background: #f2efea;
+  /* wami 
+  background: #f2efea;*/
+  background: #fff;
   padding-top: 75px;
 }
 /* line 6, ../sass/common/_common.scss */
@@ -2976,9 +2978,18 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 }
 /* line 315, ../sass/component/_middle-office-popin.scss */
 .popin-layer .popin .comment-respond .forminputforminputlast textarea, .popin-layer .popin .comment-respond .forminput textarea {
-  margin: 10px 0;
-  height: 100px;
+  margin: 10px 0 0 0;
+  height: 50px;
+  
 }
+
+.comment-form-cookies-consent input {
+  height:10px;
+  width:10px;
+  border:1px solid #555;
+  padding:3px;
+}
+
 /* line 320, ../sass/component/_middle-office-popin.scss */
 .popin-layer .popin .comment-respond .forminputforminputlast input[type="checkbox"], .popin-layer .popin .comment-respond .forminput input[type="checkbox"] {
   width: 15px;
@@ -5288,7 +5299,10 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 #ambassadors {
   overflow: hidden;
   padding: 10vh 0;
-  background: #f2efea;
+  /* wami
+  background: #f2efea;*/
+  background: #fff;
+  
 }
 /* line 77, ../sass/template/_rendez-vous.scss */
 #ambassadors .ambassadors-list {
@@ -5558,6 +5572,7 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 /* line 23, ../sass/template/_contact.scss */
 .page-template-tpl-contact #contact-form .wpcf7 input {
   margin-bottom: 20px;
+  border: 1px solid #5e5c4d;
 }
 /* line 24, ../sass/template/_contact.scss */
 .page-template-tpl-contact #contact-form .wpcf7 input[type="submit"] {
@@ -5572,6 +5587,7 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   margin-bottom: 20px;
   resize: vertical;
   min-height: 308px;
+  border: 1px solid #5e5c4d;
 }
 /* line 37, ../sass/template/_contact.scss */
 .page-template-tpl-contact #contact-form .wpcf7 .wpcfcheck {

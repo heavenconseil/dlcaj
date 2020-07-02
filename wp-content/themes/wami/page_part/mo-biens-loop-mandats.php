@@ -11,6 +11,8 @@
         <?php echo wami_return_bien_proprietaire($post); ?>  
 
         <?php 
+        $mandat = get_field("bien_mandat");
+        $mandat = is_array($mandat) ? $mandat['value'] : false;
         if(get_post_status() == 'publish') {
             if(get_field('bien_vente_vendu') || get_field('bien_vente_date_signature_acte'))  {                
                 $etat_mandat = 'Vendu';
@@ -21,8 +23,9 @@
                 else $etat_mandat = 'en vente';
             }
         }
-        else 
-            $etat_mandat = 'En cours de création (brouillon)'; ?>
+        elseif($mandat == 'mandat_delegation') $etat_mandat = 'Mandat de délégation en cours';
+        else $etat_mandat = 'En cours de création (brouillon)';
+        ?>
         <p>Etat du mandat : <span><?php echo $etat_mandat; ?></span></p> 
         
         <a href="<?php echo wami_get_page_link('ajouter-annonce').'/'.$post->ID; ?>" class="button btn-accent">Editer l'annonce</a>

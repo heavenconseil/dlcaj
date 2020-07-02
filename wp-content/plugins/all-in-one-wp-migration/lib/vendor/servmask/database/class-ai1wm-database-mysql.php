@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2020 ServMask Inc.
+ * Copyright (C) 2014-2017 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,10 +22,6 @@
  * ███████║███████╗██║  ██║ ╚████╔╝ ██║ ╚═╝ ██║██║  ██║███████║██║  ██╗
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	die( 'Kangaroos cannot jump here' );
-}
 
 class Ai1wm_Database_Mysql extends Ai1wm_Database {
 
@@ -52,7 +48,7 @@ class Ai1wm_Database_Mysql extends Ai1wm_Database {
 	/**
 	 * Return the error code for the most recent function call
 	 *
-	 * @return integer
+	 * @return int
 	 */
 	public function errno() {
 		return mysql_errno( $this->wpdb->dbh );
@@ -100,7 +96,7 @@ class Ai1wm_Database_Mysql extends Ai1wm_Database {
 	 * Return the number for rows from MySQL results
 	 *
 	 * @param  resource $result MySQL resource
-	 * @return integer
+	 * @return int
 	 */
 	public function num_rows( $result ) {
 		return mysql_num_rows( $result );
@@ -110,7 +106,7 @@ class Ai1wm_Database_Mysql extends Ai1wm_Database {
 	 * Free MySQL result memory
 	 *
 	 * @param  resource $result MySQL resource
-	 * @return boolean
+	 * @return bool
 	 */
 	public function free_result( $result ) {
 		return mysql_free_result( $result );

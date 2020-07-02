@@ -3,7 +3,8 @@
 Template Name: TPL Estimation
 */
 ?>
-<?php get_template_part('header-part', 'head'); ?>
+<?php //get_template_part('header-part', 'head'); ?>
+<?php get_header(); ?>
 
 	<?php while(have_posts()): the_post(); ?>
 		<?php
@@ -16,11 +17,11 @@ Template Name: TPL Estimation
 				<div class="w_grid limited-content">
 					<div class="grid-col col_size-12 centered">
 
-							<?php if($logo && is_array($logo)) : ?>
+							<?php /* if($logo && is_array($logo)) : ?>
 								<div class="logo">
 	            		<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>" />
 	            	</div>
-		            	<?php endif; ?>
+		            	<?php endif; */ ?>
 
 		            	<div class="intro">
 		            		<h1><?php the_field('estimation_titre'); ?></h1>
@@ -43,6 +44,9 @@ Template Name: TPL Estimation
 
 	<?php endwhile; ?>
 
-    <?php wp_footer(); ?>
+    <?php /* wp_footer();
+    
 </body>
-</html>
+</html> */ ?>
+
+<?php get_footer();

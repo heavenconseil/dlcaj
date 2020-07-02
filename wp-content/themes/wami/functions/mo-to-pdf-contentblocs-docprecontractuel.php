@@ -1,10 +1,18 @@
 <?php
 
 function get_pdf_modalite_et_honoraires($mandat_id){
+    $type_mandat = get_field("bien_mandat", $mandat_id);
     ?>
     <div class="bloc"> 
         <p class="">Votre interlocuteur exerce l’activité d’entremise sur les immeubles et fonds de commerce, conformément à la loi n° 70-9 du 2 janvier 1970, dite « loi Hoguet » et au décret n°72-678 du 20 juillet 1972, consultables sur le site <span class="underline">www.legifrance.gouv.fr</span>.</p>
-        <p class="">Le service proposé consiste en la vente d'un bien immobilier via le mandat n°<?php echo $mandat_id; ?>, comprenant une première  période irrévocable de 3 mois.<br>Modalités de dénonciation : par lettre de recommandée avec demande d’avis de réception (LRAR), avec un préavis de 15 jours.</p>
+        <?php // si le type de mandat est exigence alors pas les mm delais
+        if( $type_mandat['value']=='mandat_exigence' ) :
+            ?>
+            <p class="">Le service proposé consiste en la vente d'un bien immobilier via le mandat n°<?php echo $mandat_id; ?>, comprenant une première période irrévocable de 1 mois.<br>Modalités de dénonciation : par lettre de recommandée avec demande d’avis de réception (LRAR), avec un préavis de 7 jours.</p><?php 
+        // sinon
+        else : ?>
+            <p class="">Le service proposé consiste en la vente d'un bien immobilier via le mandat n°<?php echo $mandat_id; ?>, comprenant une première période irrévocable de 3 mois.<br>Modalités de dénonciation : par lettre de recommandée avec demande d’avis de réception (LRAR), avec un préavis de 15 jours.</p>
+        <?php endif; ?>
         <p class="">Honoraires, en cas de pleine réussite de la mission confiée : <?php echo get_field('bien_honoraires_montant', $mandat_id) ? number_format(get_field('bien_honoraires_montant', $mandat_id), 0, '', ' ')."euros" : ""; ?>.<br>Modalités de règlement : chèque ou virement.</p>
     </div><?php
 }

@@ -222,6 +222,7 @@ Style annonces middle office
 			font-size: 10px;
 			&.first{bottom: 60px;}
 			&.edit_annonce{bottom: 105px;}
+			&.diffuse_annonce{color: $black!important;}
 			@include tabletScreen {
 				position: static;
 				float: right;

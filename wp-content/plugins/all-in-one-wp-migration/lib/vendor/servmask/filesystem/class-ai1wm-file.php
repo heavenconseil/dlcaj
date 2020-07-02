@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2020 ServMask Inc.
+ * Copyright (C) 2014-2017 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,42 +23,20 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	die( 'Kangaroos cannot jump here' );
-}
-
 class Ai1wm_File {
 
 	/**
-	 * Create a file with content
+	 * Create a file with contents
 	 *
-	 * @param  string $path    Path to the file
-	 * @param  string $content Content of the file
+	 * @param string $path     Path to the file
+	 * @param string $contents Contents of the file
+	 *
 	 * @return boolean
 	 */
-	public static function create( $path, $content ) {
-		if ( ! @file_exists( $path ) ) {
-			if ( ! @is_writable( dirname( $path ) ) ) {
-				return false;
-			}
-
-			if ( ! @touch( $path ) ) {
-				return false;
-			}
-		} elseif ( ! @is_writable( $path ) ) {
-			return false;
-		}
-
-		// No changes were added
-		if ( function_exists( 'md5_file' ) ) {
-			if ( @md5_file( $path ) === md5( $content ) ) {
-				return true;
-			}
-		}
-
+	public static function create( $path, $contents ) {
 		$is_written = false;
 		if ( ( $handle = @fopen( $path, 'w' ) ) !== false ) {
-			if ( @fwrite( $handle, $content ) !== false ) {
+			if ( @fwrite( $handle, $contents ) !== false ) {
 				$is_written = true;
 			}
 
@@ -66,31 +44,5 @@ class Ai1wm_File {
 		}
 
 		return $is_written;
-	}
-
-	/**
-	 * Create a file with marker and content
-	 *
-	 * @param  string $path    Path to the file
-	 * @param  string $marker  Name of the marker
-	 * @param  string $content Content of the file
-	 * @return boolean
-	 */
-	public static function create_with_markers( $path, $marker, $content ) {
-		return @insert_with_markers( $path, $marker, $content );
-	}
-
-	/**
-	 * Delete a file by path
-	 *
-	 * @param  string  $path Path to the file
-	 * @return boolean
-	 */
-	public static function delete( $path ) {
-		if ( ! @file_exists( $path ) ) {
-			return false;
-		}
-
-		return @unlink( $path );
 	}
 }

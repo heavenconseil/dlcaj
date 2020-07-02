@@ -1,1 +1,0 @@
-<?php echo wami_return_annonces_medium($post); //fonction utilisé aussi dans reponse ajax, cf. ?>

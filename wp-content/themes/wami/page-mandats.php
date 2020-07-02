@@ -57,6 +57,7 @@ if( in_array('administrator', $user->roles) || in_array('ambassadeur', $user->ro
                             )         
                         ),*/
                         'meta_key'      => 'bien_ref',
+                        'meta_type'     => 'NUMERIC',
                         'orderby'       => 'meta_value_num',
                         'order'         => 'DESC',
                         'paged'         => $paged,

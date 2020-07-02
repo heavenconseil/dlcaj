@@ -93,19 +93,10 @@ if( !class_exists('wami_module_registre_mandat') ):
 				global $wpdb;
 				$row = $wpdb->get_row( "SELECT * FROM $this->table WHERE post_id = $post_ID");	
 				$status = $post_object->post_status;$status = $post_object->post_status;
-				if($status == 'draft' || $status == 'pending')		$status = 'Mandat en cours de rédaction';
+				if($status == 'draft' || $status == 'pending')		$status = 'Brouillon - Mandat en cours de rédaction';
 				elseif($status == 'trash') 							$status = 'Mandat annulé';
 				elseif($status == 'publish') 						$status = 'Mandat publié';
 
-				$objet_mandat = get_field('bien_mandat', $post_ID) ? get_field('bien_mandat', $post_ID) : false;
-				if( $objet_mandat && is_array($objet_mandat) ){
-					// Mandat de recherche
-					if($objet_mandat['value'] == 'mandat_de_recherche') $objet_mandat = "Mandat de recherche";
-					// Délégation de mandat
-					else if($objet_mandat['value'] == 'mandat_delegation') $objet_mandat = "Délégation de mandat"; //Mandat de vente (simple, exclusif ou exigence reste des mandats de vente)
-					else $objet_mandat = "Mandat de vente";
-				}
-				
 				if($row) :
 					$wpdb->update(
 						// table :
@@ -115,10 +106,10 @@ if( !class_exists('wami_module_registre_mandat') ):
 						'post_id'      			=> $post_ID,
 						'bien_ref'     			=> $ref_bien,
 						'statut'				=> $status,
-						'date_mandat'      		=> get_field('bien_date_de_referencement', $post_ID) ? get_field('bien_date_de_referencement', $post_ID) : "Mandat en cours de référencement",
+						'date_mandat'      		=> get_field('bien_date_de_referencement', $post_ID) ? get_field('bien_date_de_referencement', $post_ID) : "brouillon - Mandat en cours de référencement",
 						'noms_mandants'     	=> $mandant_nom,
 						'adresses_mandants'     => $mandant_adresse,
-						'objet_mandat'      	=> $objet_mandat,
+						'objet_mandat'      	=> "Mandat de vente",
 						'nature_situation_bien' => get_field('bien_type', $post_ID) ? get_field('bien_type', $post_ID).' : '.$adresse_bien : "",		
 						'updated'      			=> $now,
 						), 
@@ -132,10 +123,10 @@ if( !class_exists('wami_module_registre_mandat') ):
 						'post_id'      			=> $post_ID,
 						'bien_ref'     			=> $ref_bien,						
 						'statut'				=> $status,
-						'date_mandat'      		=> get_field('date_mandat', $post_ID) ? get_field('date_mandat', $post_ID) : "Mandat en cours de signature",	
+						'date_mandat'      		=> get_field('date_mandat', $post_ID) ? get_field('date_mandat', $post_ID) : "brouillon - Mandat en cours de signature",	
 						'noms_mandants'     	=> $mandant_nom,
 						'adresses_mandants'     => $mandant_adresse,
-						'objet_mandat'      	=> $objet_mandat,
+						'objet_mandat'      	=> "Mandat de vente",
 						'nature_situation_bien' => get_field('bien_type', $post_ID) ? get_field('bien_type', $post_ID).' : '.$adresse_bien : "",	
 						'created'      			=> $now,		
 						'updated'      			=> $now,
@@ -255,7 +246,7 @@ if( !class_exists('wami_module_registre_mandat') ):
  			global $wpdb;
 			//$existing_columns = $wpdb->get_results("DESCRIBE $this->table", 0);
 			//debug($existing_columns);        
-			$rows = $wpdb->get_results("SELECT * FROM $this->table");
+			$rows = $wpdb->get_results( "SELECT * FROM $this->table");
 			
 			foreach($rows as $r){
 				$resultat_global[] = array(

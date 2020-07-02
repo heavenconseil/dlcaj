@@ -71,7 +71,7 @@ function wami_mo_request_annonces_display($myp){
             
             <a href="<?php echo wami_get_page_link('ajouter-annonce').'/'.$myp->ID; ?>" class="button btn-accent edit_annonce">Editer l'annonce</a>
             <?php if($myp->post_status != 'publish') : ?>
-                <a href="#diffusion-annonce" class="button btn-accent open_popin" data-openpopin="diffusion-annonce-<?php echo $myp->ID; ?>" data-bid="<?php echo $myp->ID; ?>">Diffuser l'annonce</a>   
+                <a href="#diffusion-annonce" class="button btn-accent open_popin diffuse_annonce" data-openpopin="diffusion-annonce-<?php echo $myp->ID; ?>" data-bid="<?php echo $myp->ID; ?>">Diffuser l'annonce</a>   
             <?php ; else : ?>
                 <a href="" class="button btn-accent open_popin declare_vente" data-openpopin="confirme-declarer-vente-<?php echo $myp->ID; ?>" data-bid="<?php echo $myp->ID; ?>">Déclarer la vente</a>  
             <?php endif; ?>   

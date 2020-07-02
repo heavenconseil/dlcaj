@@ -441,7 +441,7 @@ ul, li {
 }
 
 /* line 21, ../sass/common/_fonts.scss */
-.title-m, .workshop-list .workshop .workshop-title, .workshop-list .workshop .workshop-info-primary li, .workshop-list .workshop .workshop-info-secondary li, .workshop-list .workshop .wokshop-description, #facebook-posts h3, .home #annonces h3, .home #brand-info #actu .centered-content h3, .home #brand-info #actu .centered-content h4, .home #brand-info #actu .centered-content p, .home #brand-info #testimony .centered-content article h4, .tpl-annonces-list .city-highlight p, .single-annonce #common-infos h1, .single-annonce #common-infos h1 #annonce-price, .single-annonce #common-infos h2, .single-annonce #common-infos .annonce-content p, .single-annonce #common-infos .annonce-content ul li, .single-annonce #common-infos .info-secondary h3, .single-annonce #common-infos .info-secondary .details, .single-annonce #diagnostics .info-vente .vente-list li, .single-annonce #localisation #localisation-infos h3, .single-annonce #localisation #localisation-infos .localisation-description, .single-annonce #similar-posts h3, .tpl-ville #city-infos .w_grid .detail-city, .tpl-ville #coupsdecoeur h3, .single-ambassador #ambassador-profil #ambassador-avatar h1, .single-ambassador #annonces h3, #main .page-content h1, .tpl-philosophie .philo-details-block h4, .tpl-philosophie .philo-details-block p, .tpl-philosophie .philo-half-block h3, .tpl-philosophie .philo-half-block p, .tpl-philosophie .philo-half-block li, .tpl-philosophie #associees h3, .tpl-philosophie #media .article-list li .article-text h4, .tpl-philosophie #media .article-list li .article-text p, .tpl-philosophie #media #publications li, .tpl-philosophie #media #publications li a, #workshop h1, #workshop .intro, #workshop .cta, #ambassadors h2, #emploi .page-title h1, #emploi #job-list .job-item .job-title, #bareme .mention, #bareme .title-addition, #bareme .bareme-bloc p, #bareme .bareme-bloc .bareme-head .grid-col h3, #bareme .bareme-bloc .bareme-body .bareme-row li, .page-template-tpl-contact #contact-form h2, .page-template-tpl-contact #contact-form #direct-contact, .page-template-tpl-contact #contact-form #direct-contact h4 {
+.title-m, .workshop-list .workshop .workshop-title, .workshop-list .workshop .workshop-info-primary li, .workshop-list .workshop .workshop-info-secondary li, .workshop-list .workshop .wokshop-description, #facebook-posts h3, .home #annonces h3, .home #brand-info #actu .centered-content h3, .home #brand-info #actu .centered-content h4, .home #brand-info #actu .centered-content p, .home #brand-info #testimony .limited-content article h4, .tpl-annonces-list .city-highlight p, .single-annonce #common-infos h1, .single-annonce #common-infos h1 #annonce-price, .single-annonce #common-infos h2, .single-annonce #common-infos .annonce-content p, .single-annonce #common-infos .annonce-content ul li, .single-annonce #common-infos .info-secondary h3, .single-annonce #common-infos .info-secondary .details, .single-annonce #diagnostics .info-vente .vente-list li, .single-annonce #localisation #localisation-infos h3, .single-annonce #localisation #localisation-infos .localisation-description, .single-annonce #similar-posts h3, .tpl-ville #city-infos .w_grid .detail-city, .tpl-ville #coupsdecoeur h3, .single-ambassador #ambassador-profil #ambassador-avatar h1, .single-ambassador #annonces h3, #main .page-content h1, .tpl-philosophie .philo-details-block h4, .tpl-philosophie .philo-details-block p, .tpl-philosophie .philo-half-block h3, .tpl-philosophie .philo-half-block p, .tpl-philosophie .philo-half-block li, .tpl-philosophie #associees h3, .tpl-philosophie #media .article-list li .article-text h4, .tpl-philosophie #media .article-list li .article-text p, .tpl-philosophie #media #publications li, .tpl-philosophie #media #publications li a, #workshop h1, #workshop .intro, #workshop .cta, #ambassadors h2, #emploi .page-title h1, #emploi #job-list .job-item .job-title, #bareme .mention, #bareme .title-addition, #bareme .bareme-bloc p, #bareme .bareme-bloc .bareme-head .grid-col h3, #bareme .bareme-bloc .bareme-body .bareme-row li, .page-template-tpl-contact #contact-form h2, .page-template-tpl-contact #contact-form #direct-contact, .page-template-tpl-contact #contact-form #direct-contact h4 {
   font-weight: 400;
   font-family: "ITCBlair-Medium", Verdana, sans-serif;
   font-size: 16px;
@@ -472,7 +472,7 @@ ul, li {
 }
 
 /* line 48, ../sass/common/_fonts.scss */
-.text-highlight, .home #brand-info #testimony .centered-content article h5, .home #brand-info #testimony .centered-content article p, .single-annonce #common-infos .info-primary li, .single-annonce #common-infos .info-secondary .embassador a, .single-annonce #common-infos .info-secondary .embassador p, .single-annonce #localisation #localisation-infos .localisation-infos-secondary, .single-ambassador #ambassador-profil #ambassador-info-primary p, .single-ambassador #ambassador-profil #ambassador-info-secondary b, .single-ambassador #ambassador-profil #ambassador-info-secondary p, #main .page-content h2, #main .page-content h3, #main .page-content p, .tpl-philosophie #media #presse p {
+.text-highlight, .home #brand-info #testimony .limited-content article h5, .home #brand-info #testimony .limited-content article p, .single-annonce #common-infos .info-primary li, .single-annonce #common-infos .info-secondary .embassador a, .single-annonce #common-infos .info-secondary .embassador p, .single-annonce #localisation #localisation-infos .localisation-infos-secondary, .single-ambassador #ambassador-profil #ambassador-info-primary p, .single-ambassador #ambassador-profil #ambassador-info-secondary b, .single-ambassador #ambassador-profil #ambassador-info-secondary p, #main .page-content h2, #main .page-content h3, #main .page-content p, .tpl-philosophie #media #presse p {
   font-weight: 400;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
   font-size: 14px;
@@ -706,31 +706,39 @@ body.home {
   background: #979d5d;
 }
 /* line 19, ../sass/component/_button.scss */
+.button.btn-accent.open_popin, form input.open_popin[type=submit], fieldset input.open_popin[type=submit] {
+  color: #ffffff !important;
+}
+/* line 21, ../sass/component/_button.scss */
+.button.btn-accent.open_popin.declare_vente, form input.open_popin.declare_vente[type=submit], fieldset input.open_popin.declare_vente[type=submit] {
+  color: #000 !important;
+}
+/* line 23, ../sass/component/_button.scss */
 .button.btn-accent:hover, form input[type=submit]:hover, fieldset input[type=submit]:hover {
   background: #a8ad75;
 }
-/* line 23, ../sass/component/_button.scss */
+/* line 27, ../sass/component/_button.scss */
 .button.btn-primary {
   background: #5e5c4d;
 }
-/* line 25, ../sass/component/_button.scss */
+/* line 29, ../sass/component/_button.scss */
 .button.btn-primary:hover {
   background: #74725f;
 }
-/* line 29, ../sass/component/_button.scss */
+/* line 33, ../sass/component/_button.scss */
 .button.btn-secondary, form input[type=submit].submit-secondary, fieldset input[type=submit].submit-secondary, form input[type=submit].right-arrow:hover, fieldset input[type=submit].right-arrow:hover {
   background: #383838;
 }
-/* line 31, ../sass/component/_button.scss */
+/* line 35, ../sass/component/_button.scss */
 .button.btn-secondary:hover, form input[type=submit].submit-secondary:hover, fieldset input[type=submit].submit-secondary:hover, form input[type=submit].right-arrow:hover, fieldset input[type=submit].right-arrow:hover {
   background: #4c4c4c;
 }
-/* line 35, ../sass/component/_button.scss */
+/* line 39, ../sass/component/_button.scss */
 .button.btn-stoke {
   border: 1px solid #ffffff;
   background: rgba(255, 255, 255, 0);
 }
-/* line 39, ../sass/component/_button.scss */
+/* line 43, ../sass/component/_button.scss */
 .button.btn-stoke:hover {
   -webkit-transform: none;
   -moz-transform: none;
@@ -738,20 +746,20 @@ body.home {
   transform: none;
   background: rgba(255, 255, 255, 0.3);
 }
-/* line 45, ../sass/component/_button.scss */
+/* line 49, ../sass/component/_button.scss */
 .button.btn-md-office {
   background: #000000;
 }
-/* line 48, ../sass/component/_button.scss */
+/* line 52, ../sass/component/_button.scss */
 .button.btn-md-office:hover {
   background: rgba(0, 0, 0, 0.6);
 }
-/* line 53, ../sass/component/_button.scss */
+/* line 57, ../sass/component/_button.scss */
 .button.ico-right {
   position: relative;
   padding-right: 50px;
 }
-/* line 57, ../sass/component/_button.scss */
+/* line 61, ../sass/component/_button.scss */
 .button.ico-right::after {
   content: '';
   display: block;
@@ -763,12 +771,12 @@ body.home {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 69, ../sass/component/_button.scss */
+/* line 73, ../sass/component/_button.scss */
 .button.ico-left {
   position: relative;
   padding-left: 50px;
 }
-/* line 73, ../sass/component/_button.scss */
+/* line 77, ../sass/component/_button.scss */
 .button.ico-left::after {
   content: '';
   display: block;
@@ -778,32 +786,32 @@ body.home {
   left: 25px;
   top: 0;
 }
-/* line 85, ../sass/component/_button.scss */
+/* line 89, ../sass/component/_button.scss */
 .button.arrow-left::after {
   background-image: url("../img/ico/ico-arrow-left.png");
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 92, ../sass/component/_button.scss */
+/* line 96, ../sass/component/_button.scss */
 .button.arrow-right::after, form input[type=submit].right-arrow, fieldset input[type=submit].right-arrow, form input[type=submit].right-arrow:hover, fieldset input[type=submit].right-arrow:hover {
   background-image: url("../img/ico/ico-arrow-right.png");
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 99, ../sass/component/_button.scss */
+/* line 103, ../sass/component/_button.scss */
 .button.arrow-down::after {
   left: 20px;
   background-image: url("../img/ico/ico-arrow-down.png");
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 107, ../sass/component/_button.scss */
+/* line 111, ../sass/component/_button.scss */
 .button.arrow-download::after {
   background-image: url("../img/ico/ico-arrow-download.png");
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 113, ../sass/component/_button.scss */
+/* line 117, ../sass/component/_button.scss */
 .button.btn-to-right {
   float: right;
 }
@@ -1008,7 +1016,7 @@ header#header.header-front #main-nav li {
 /* line 94, ../sass/component/_header.scss */
 header#header.header-front #main-nav li a {
   display: block;
-  padding: 0 1vw;
+  padding: 0 0.6vw;
   height: 75px;
   line-height: 75px;
   color: #c7c5bd;
@@ -1031,7 +1039,7 @@ header#header.header-front #account {
   display: inline-block;
   float: right;
   border-left: 1px solid #c7c5bd;
-  padding: 0 0 0 1vw;
+  padding: 0;
   margin-top: 20px;
 }
 @media screen and (max-width: 1000px) {
@@ -2194,31 +2202,33 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 .annonce-list.tpl-wild .annonce article h4 {
   width: 70%;
   float: left;
+  margin-bottom: 5px;
 }
-/* line 201, ../sass/component/_annonces.scss */
+/* line 202, ../sass/component/_annonces.scss */
 .annonce-list.tpl-wild .annonce article .annonce-localite {
   margin-bottom: 12px;
 }
-/* line 213, ../sass/component/_annonces.scss */
+/* line 214, ../sass/component/_annonces.scss */
 .annonce-list.tpl-tripple {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-/* line 220, ../sass/component/_annonces.scss */
+/* line 221, ../sass/component/_annonces.scss */
 .annonce-list.tpl-tripple .annonce article {
   color: #383838;
 }
-/* line 224, ../sass/component/_annonces.scss */
+/* line 225, ../sass/component/_annonces.scss */
 .annonce-list.tpl-tripple .annonce article h4 {
   width: 70%;
   float: left;
+  margin-bottom: 5px;
 }
-/* line 230, ../sass/component/_annonces.scss */
+/* line 231, ../sass/component/_annonces.scss */
 .annonce-list.tpl-tripple .annonce article .annonce-localite {
   margin-bottom: 12px;
 }
-/* line 244, ../sass/component/_annonces.scss */
+/* line 245, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce {
   clear: both;
   padding-bottom: 25px;
@@ -2226,11 +2236,11 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   margin-bottom: 25px;
   overflow: hidden;
 }
-/* line 251, ../sass/component/_annonces.scss */
+/* line 252, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce:last-child {
   border-bottom: none;
 }
-/* line 255, ../sass/component/_annonces.scss */
+/* line 256, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce .annonce-cover {
   width: 100px;
   height: 70px;
@@ -2238,71 +2248,71 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   margin-right: 20px;
 }
 @media screen and (max-width: 700px) {
-  /* line 255, ../sass/component/_annonces.scss */
+  /* line 256, ../sass/component/_annonces.scss */
   .annonce-list.tpl-thumb .annonce .annonce-cover {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 266, ../sass/component/_annonces.scss */
+  /* line 267, ../sass/component/_annonces.scss */
   .annonce-list.tpl-thumb .annonce article {
     margin-left: 120px;
   }
 }
-/* line 272, ../sass/component/_annonces.scss */
+/* line 273, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce article h4 {
   text-transform: uppercase;
   font-family: "AvenirLTPro-Heavy", Verdana, sans-serif;
   margin-bottom: 10px;
 }
-/* line 277, ../sass/component/_annonces.scss */
+/* line 278, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce article .annonce-localite {
   margin-bottom: 10px;
 }
-/* line 281, ../sass/component/_annonces.scss */
+/* line 282, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce article .annonce-primary {
   float: none;
   width: 100%;
   text-align: left;
   margin-bottom: 5px;
 }
-/* line 286, ../sass/component/_annonces.scss */
+/* line 287, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce article .annonce-primary li {
   display: inline-block;
   padding: 0 8px;
   margin-bottom: 5px;
   border-right: 1px solid #383838;
 }
-/* line 292, ../sass/component/_annonces.scss */
+/* line 293, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce article .annonce-primary li:first-child {
   padding-left: 0;
 }
-/* line 293, ../sass/component/_annonces.scss */
+/* line 294, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumb .annonce article .annonce-primary li:last-child {
   padding-right: 0;
   border-right: 0;
 }
-/* line 307, ../sass/component/_annonces.scss */
+/* line 308, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette {
   overflow: hidden;
 }
-/* line 310, ../sass/component/_annonces.scss */
+/* line 311, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette article {
   margin-bottom: 50px;
 }
-/* line 313, ../sass/component/_annonces.scss */
+/* line 314, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette article .thumb-post-cover {
   position: relative;
   display: block;
   width: 100%;
   margin-bottom: 15px;
 }
-/* line 319, ../sass/component/_annonces.scss */
+/* line 320, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette article .thumb-post-cover img {
   width: 100%;
   height: auto;
 }
-/* line 321, ../sass/component/_annonces.scss */
+/* line 322, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette article .thumb-post-cover .post-label {
   display: block;
   position: absolute;
@@ -2312,23 +2322,23 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   color: #383838;
   background: #ffffff;
 }
-/* line 332, ../sass/component/_annonces.scss */
+/* line 333, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette article h4 {
   font-family: "AvenirLTPro-Heavy", Verdana, sans-serif;
   color: #383838;
   margin-bottom: 8px;
 }
-/* line 338, ../sass/component/_annonces.scss */
+/* line 339, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette article h4 span {
   padding-right: 8px;
   border-right: 1px solid #383838;
 }
-/* line 342, ../sass/component/_annonces.scss */
+/* line 343, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette article h4 span:last-child {
   border-right: none;
   padding-left: 8px;
 }
-/* line 348, ../sass/component/_annonces.scss */
+/* line 349, ../sass/component/_annonces.scss */
 .annonce-list.tpl-thumbinette article h4 .annonce-price {
   float: right;
   display: inline-block;
@@ -3546,7 +3556,8 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   overflow: hidden;
 }
 /* line 402, ../sass/template/_homepage.scss */
-.home #brand-info #testimony .centered-content {
+.home #brand-info #testimony .limited-content {
+  /*
   overflow: hidden;
   position: relative;
   display: block;
@@ -3554,18 +3565,21 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   max-width: 900px;
   margin: 0 auto;
   z-index: 2;
+  */
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 700px) {
   /* line 402, ../sass/template/_homepage.scss */
-  .home #brand-info #testimony .centered-content {
-    margin-bottom: 60px;
+  .home #brand-info #testimony .limited-content {
+    margin-bottom: 30px;
+    padding-right: 7%;
   }
 }
-/* line 415, ../sass/template/_homepage.scss */
-.home #brand-info #testimony .centered-content article {
+/* line 419, ../sass/template/_homepage.scss */
+.home #brand-info #testimony .limited-content article {
   display: block;
   float: left;
-  width: 50%;
+  width: 33%;
   padding: 0 25px;
   margin-bottom: 60px;
   text-align: center;
@@ -3573,19 +3587,23 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   box-sizing: border-box;
 }
 @media screen and (max-width: 700px) {
-  /* line 415, ../sass/template/_homepage.scss */
-  .home #brand-info #testimony .centered-content article {
+  /* line 419, ../sass/template/_homepage.scss */
+  .home #brand-info #testimony .limited-content article {
     float: none;
     width: 100%;
     padding: 0;
   }
-  /* line 430, ../sass/template/_homepage.scss */
-  .home #brand-info #testimony .centered-content article:last-child {
+  /* line 434, ../sass/template/_homepage.scss */
+  .home #brand-info #testimony .limited-content article:last-child {
     margin-bottom: 60px;
   }
+  /* line 438, ../sass/template/_homepage.scss */
+  .home #brand-info #testimony .limited-content article .btn-to-right {
+    margin-right: 20px;
+  }
 }
-/* line 435, ../sass/template/_homepage.scss */
-.home #brand-info #testimony .centered-content article .testimony-cover {
+/* line 441, ../sass/template/_homepage.scss */
+.home #brand-info #testimony .limited-content article .testimony-cover {
   display: block;
   width: 145px;
   height: 145px;
@@ -3597,19 +3615,19 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   -o-border-radius: 80px;
   border-radius: 80px;
 }
-/* line 445, ../sass/template/_homepage.scss */
-.home #brand-info #testimony .centered-content article h4 {
+/* line 451, ../sass/template/_homepage.scss */
+.home #brand-info #testimony .limited-content article h4 {
   font-family: "AvenirLTPro-Medium", serif;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-/* line 451, ../sass/template/_homepage.scss */
-.home #brand-info #testimony .centered-content article h4 span {
+/* line 457, ../sass/template/_homepage.scss */
+.home #brand-info #testimony .limited-content article h4 span {
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
   text-transform: none;
 }
-/* line 456, ../sass/template/_homepage.scss */
-.home #brand-info #testimony .centered-content article h5 {
+/* line 462, ../sass/template/_homepage.scss */
+.home #brand-info #testimony .limited-content article h5 {
   font-family: "AvenirLTPro-Medium", serif;
   text-transform: none;
   font-style: italic;
@@ -3896,7 +3914,11 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
 .single-annonce #common-infos .annonce-content ul li {
   list-style: disc;
 }
-/* line 157, ../sass/template/_single-annonce.scss */
+/* line 156, ../sass/template/_single-annonce.scss */
+.single-annonce #common-infos .annonce-content p {
+  text-align: justify;
+}
+/* line 160, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary {
   display: block;
   width: 100%;
@@ -3904,35 +3926,35 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   margin: 0 auto;
   text-align: center;
 }
-/* line 163, ../sass/template/_single-annonce.scss */
+/* line 166, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary .button.visite_virtuelle {
   margin-bottom: 20px;
 }
-/* line 166, ../sass/template/_single-annonce.scss */
+/* line 169, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary div {
   text-align: left;
 }
-/* line 169, ../sass/template/_single-annonce.scss */
+/* line 172, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary h3 {
   font-family: "AvenirLTPro-Medium", serif;
   text-transform: none;
   margin-bottom: 7px;
 }
-/* line 175, ../sass/template/_single-annonce.scss */
+/* line 178, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary .embassador {
   display: block;
   padding: 25px 40px;
   background: #ffffff;
   margin-bottom: 40px;
 }
-/* line 180, ../sass/template/_single-annonce.scss */
+/* line 183, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary .embassador header {
   overflow: hidden;
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #c7c5bd;
 }
-/* line 185, ../sass/template/_single-annonce.scss */
+/* line 188, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary .embassador header .embassador-cover {
   display: block;
   width: 60px;
@@ -3946,36 +3968,36 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   -o-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 194, ../sass/template/_single-annonce.scss */
+/* line 197, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary .embassador header .embassador-cover img {
   width: 100%;
   height: auto;
 }
-/* line 199, ../sass/template/_single-annonce.scss */
+/* line 202, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary .embassador header h4 {
   color: #929292;
   text-transform: none;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
 }
-/* line 206, ../sass/template/_single-annonce.scss */
+/* line 209, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary .embassador a, .single-annonce #common-infos .info-secondary .embassador p {
   color: #929292;
   margin-bottom: 7px;
 }
-/* line 212, ../sass/template/_single-annonce.scss */
+/* line 215, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary #annonce-environnement, .single-annonce #common-infos .info-secondary #annonce-charme {
   display: block;
   margin-bottom: 40px;
   padding-left: 40px;
 }
-/* line 217, ../sass/template/_single-annonce.scss */
+/* line 220, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary ul.charme-note, .single-annonce #common-infos .info-secondary ul.environnement-note {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 222, ../sass/template/_single-annonce.scss */
+/* line 225, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary ul.charme-note li, .single-annonce #common-infos .info-secondary ul.environnement-note li {
   display: block;
   float: left;
@@ -3987,63 +4009,63 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   margin-right: 5px;
   background: transparent url(../img/ico/sprite-annonce-infos.png) top left no-repeat;
 }
-/* line 235, ../sass/template/_single-annonce.scss */
+/* line 238, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary ul.environnement-note .enviro-float {
   background-position: -12px top;
 }
-/* line 236, ../sass/template/_single-annonce.scss */
+/* line 239, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary ul.environnement-note .enviro-off {
   background-position: top right;
 }
-/* line 239, ../sass/template/_single-annonce.scss */
+/* line 242, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary ul.charme-note .charme-on {
   background-position: bottom left;
 }
-/* line 240, ../sass/template/_single-annonce.scss */
+/* line 243, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary ul.charme-note .charme-float {
   background-position: -12px bottom;
 }
-/* line 241, ../sass/template/_single-annonce.scss */
+/* line 244, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary ul.charme-note .charme-off {
   background-position: bottom right;
 }
-/* line 243, ../sass/template/_single-annonce.scss */
+/* line 246, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary h3 {
   display: inline-block;
 }
-/* line 246, ../sass/template/_single-annonce.scss */
+/* line 249, ../sass/template/_single-annonce.scss */
 .single-annonce #common-infos .info-secondary .details {
   color: #929292;
   text-transform: none;
   font-family: "AvenirLTPro-Medium", serif;
   font-style: italic;
 }
-/* line 258, ../sass/template/_single-annonce.scss */
+/* line 261, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics_for_print {
   display: none;
 }
-/* line 259, ../sass/template/_single-annonce.scss */
+/* line 262, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics {
   background: #cbcead;
   padding: 10vh 0;
   overflow: hidden;
 }
-/* line 263, ../sass/template/_single-annonce.scss */
+/* line 266, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des, .single-annonce #diagnostics #ges {
   margin-bottom: 50px;
 }
-/* line 265, ../sass/template/_single-annonce.scss */
+/* line 268, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des h4, .single-annonce #diagnostics #ges h4 {
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
   margin-bottom: 40px;
 }
-/* line 270, ../sass/template/_single-annonce.scss */
+/* line 273, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des .diagnostic-shem, .single-annonce #diagnostics #ges .diagnostic-shem {
   position: relative;
   display: block;
   width: 100%;
 }
-/* line 274, ../sass/template/_single-annonce.scss */
+/* line 277, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des .diagnostic-shem .shema, .single-annonce #diagnostics #ges .diagnostic-shem .shema {
   display: block;
   width: 160px;
@@ -4051,7 +4073,7 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   overflow: hidden;
   background: transparent url(../img/GES.png) top left no-repeat;
 }
-/* line 281, ../sass/template/_single-annonce.scss */
+/* line 284, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des .diagnostic-shem .value, .single-annonce #diagnostics #ges .diagnostic-shem .value {
   position: absolute;
   left: 185px;
@@ -4067,7 +4089,7 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   -o-transition: all 1550ms;
   transition: all 1550ms;
 }
-/* line 292, ../sass/template/_single-annonce.scss */
+/* line 295, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des .diagnostic-shem .value:after, .single-annonce #diagnostics #ges .diagnostic-shem .value:after {
   content: '';
   position: absolute;
@@ -4083,52 +4105,52 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
 }
-/* line 309, ../sass/template/_single-annonce.scss */
+/* line 312, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des .diagnostic-shem .shema {
   background-image: url(../img/DES.png);
 }
-/* line 312, ../sass/template/_single-annonce.scss */
+/* line 315, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des .diagnostic-shem .value {
   background: #5e5c4d;
 }
-/* line 314, ../sass/template/_single-annonce.scss */
+/* line 317, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics #des .diagnostic-shem .value:after {
   border-color: transparent #5e5c4d transparent transparent;
 }
-/* line 320, ../sass/template/_single-annonce.scss */
+/* line 323, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics .info-vente {
   display: block;
   padding: 30px 40px;
   background: #ffffff;
 }
-/* line 324, ../sass/template/_single-annonce.scss */
+/* line 327, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics .info-vente .vente-list {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #c7c5bd;
 }
-/* line 328, ../sass/template/_single-annonce.scss */
+/* line 331, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics .info-vente .vente-list:last-child {
   padding: 0;
   margin: 0;
   border: none;
 }
-/* line 329, ../sass/template/_single-annonce.scss */
+/* line 332, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics .info-vente .vente-list li {
   text-transform: none;
   color: #929292;
   font-family: "AvenirLTPro-Medium", serif;
   margin-bottom: 8px;
 }
-/* line 335, ../sass/template/_single-annonce.scss */
+/* line 338, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics .info-vente .vente-list li:last-child {
   margin-bottom: 0;
 }
-/* line 336, ../sass/template/_single-annonce.scss */
+/* line 339, ../sass/template/_single-annonce.scss */
 .single-annonce #diagnostics .info-vente .vente-list li span {
   color: #383838;
 }
-/* line 344, ../sass/template/_single-annonce.scss */
+/* line 347, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation {
   padding: 10vh 0;
   overflow: hidden;
@@ -4137,18 +4159,18 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   /* secondary infos */
 }
 @media screen and (max-width: 700px) {
-  /* line 344, ../sass/template/_single-annonce.scss */
+  /* line 347, ../sass/template/_single-annonce.scss */
   .single-annonce #localisation {
     padding: 0 0 10vh;
   }
 }
-/* line 352, ../sass/template/_single-annonce.scss */
+/* line 355, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-map {
   min-height: 50vh;
   background: #999;
   margin-bottom: 10vh;
 }
-/* line 358, ../sass/template/_single-annonce.scss */
+/* line 361, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos {
   display: block;
   width: 80%;
@@ -4158,37 +4180,37 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   overflow: hidden;
 }
 @media screen and (max-width: 700px) {
-  /* line 358, ../sass/template/_single-annonce.scss */
+  /* line 361, ../sass/template/_single-annonce.scss */
   .single-annonce #localisation #localisation-infos {
     padding-top: 50px;
   }
 }
-/* line 368, ../sass/template/_single-annonce.scss */
+/* line 371, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos h3 {
   font-family: "AvenirLTPro-Heavy", Verdana, sans-serif;
   text-transform: none;
   padding-bottom: 5px;
 }
-/* line 373, ../sass/template/_single-annonce.scss */
+/* line 376, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos h3 span {
   float: right;
   text-transform: uppercase;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
 }
 @media screen and (max-width: 1000px) {
-  /* line 373, ../sass/template/_single-annonce.scss */
+  /* line 376, ../sass/template/_single-annonce.scss */
   .single-annonce #localisation #localisation-infos h3 span {
     float: none;
     display: block;
   }
 }
-/* line 383, ../sass/template/_single-annonce.scss */
+/* line 386, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos .localisation-description {
   text-transform: none;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
   margin-bottom: 40px;
 }
-/* line 389, ../sass/template/_single-annonce.scss */
+/* line 392, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos .localisation-infos-secondary {
   display: block;
   float: left;
@@ -4196,7 +4218,7 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   padding-right: 25px;
   box-sizing: border-box;
 }
-/* line 396, ../sass/template/_single-annonce.scss */
+/* line 399, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos .localisation-infos-secondary:last-child {
   padding-right: 0;
   padding-left: 25px;
@@ -4204,20 +4226,20 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   float: right;
 }
 @media screen and (max-width: 1000px) {
-  /* line 389, ../sass/template/_single-annonce.scss */
+  /* line 392, ../sass/template/_single-annonce.scss */
   .single-annonce #localisation #localisation-infos .localisation-infos-secondary {
     width: 100%;
     padding: 0 !important;
     text-align: left !important;
   }
 }
-/* line 407, ../sass/template/_single-annonce.scss */
+/* line 410, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos .localisation-infos-secondary li {
   /*&:last-child a{
       border-bottom: none;
   }*/
 }
-/* line 408, ../sass/template/_single-annonce.scss */
+/* line 411, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos .localisation-infos-secondary li a {
   display: block;
   padding: 10px;
@@ -4228,30 +4250,30 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   -o-transition: all 350ms;
   transition: all 350ms;
 }
-/* line 414, ../sass/template/_single-annonce.scss */
+/* line 417, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos .localisation-infos-secondary li a.active, .single-annonce #localisation #localisation-infos .localisation-infos-secondary li a:hover {
   background: #fff;
 }
-/* line 417, ../sass/template/_single-annonce.scss */
+/* line 420, ../sass/template/_single-annonce.scss */
 .single-annonce #localisation #localisation-infos .localisation-infos-secondary li a:before {
   content: url(../img/picto_hotspot.png);
   display: block;
   float: left;
   margin-top: 6px;
 }
-/* line 431, ../sass/template/_single-annonce.scss */
+/* line 434, ../sass/template/_single-annonce.scss */
 .single-annonce #similar-posts {
   overflow: hidden;
   padding: 10vh 0;
   background: #aeada6;
 }
-/* line 435, ../sass/template/_single-annonce.scss */
+/* line 438, ../sass/template/_single-annonce.scss */
 .single-annonce #similar-posts h3 {
   color: #ffffff;
   border-color: #ffffff;
 }
 @media screen and (max-width: 700px) {
-  /* line 439, ../sass/template/_single-annonce.scss */
+  /* line 442, ../sass/template/_single-annonce.scss */
   .single-annonce #similar-posts h3 .button {
     display: none;
   }
@@ -4742,6 +4764,22 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   font-family: "AvenirLTPro-Medium", serif;
 }
 
+/* line 67, ../sass/template/_page.scss */
+.page-template-default #main .page-content {
+  width: 65%;
+  margin: auto;
+}
+/* line 71, ../sass/template/_page.scss */
+.page-template-default #main .page-content p {
+  font-size: 16px;
+  text-align: justify;
+}
+/* line 76, ../sass/template/_page.scss */
+.page-template-default #main .page-content h4, .page-template-default #main .page-content h3, .page-template-default #main .page-content h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 /* line 1, ../sass/template/_philosophie.scss */
 .tpl-philosophie {
   /* ============================== */
@@ -4782,14 +4820,15 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   text-transform: none;
   margin-bottom: 20px;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
+  text-align: justify;
 }
 @media screen and (max-width: 1000px) {
-  /* line 39, ../sass/template/_philosophie.scss */
+  /* line 40, ../sass/template/_philosophie.scss */
   .tpl-philosophie .margin-1 {
     margin-left: 0;
   }
 }
-/* line 45, ../sass/template/_philosophie.scss */
+/* line 46, ../sass/template/_philosophie.scss */
 .tpl-philosophie .philo-punhline-block {
   position: absolute;
   top: 0;
@@ -4798,12 +4837,12 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   left: 0;
 }
 @media screen and (max-width: 1000px) {
-  /* line 45, ../sass/template/_philosophie.scss */
+  /* line 46, ../sass/template/_philosophie.scss */
   .tpl-philosophie .philo-punhline-block {
     position: relative;
   }
 }
-/* line 55, ../sass/template/_philosophie.scss */
+/* line 56, ../sass/template/_philosophie.scss */
 .tpl-philosophie .philo-punhline-block .bottom-block {
   display: block;
   width: 100%;
@@ -4812,12 +4851,12 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   left: 0;
 }
 @media screen and (max-width: 1000px) {
-  /* line 55, ../sass/template/_philosophie.scss */
+  /* line 56, ../sass/template/_philosophie.scss */
   .tpl-philosophie .philo-punhline-block .bottom-block {
     position: relative;
   }
 }
-/* line 68, ../sass/template/_philosophie.scss */
+/* line 69, ../sass/template/_philosophie.scss */
 .tpl-philosophie .philo-punchline {
   text-transform: uppercase;
   -webkit-hyphens: auto;
@@ -4826,19 +4865,19 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   -o-hyphens: auto;
   hyphens: auto;
 }
-/* line 78, ../sass/template/_philosophie.scss */
+/* line 79, ../sass/template/_philosophie.scss */
 .tpl-philosophie .philo-half-block {
   display: block;
   margin: 0 20%;
   padding-top: 60px;
 }
 @media screen and (max-width: 1000px) {
-  /* line 78, ../sass/template/_philosophie.scss */
+  /* line 79, ../sass/template/_philosophie.scss */
   .tpl-philosophie .philo-half-block {
     margin-left: 0;
   }
 }
-/* line 87, ../sass/template/_philosophie.scss */
+/* line 88, ../sass/template/_philosophie.scss */
 .tpl-philosophie .philo-half-block h3 {
   text-transform: uppercase;
   font-family: "AvenirLTPro-Heavy", Verdana, sans-serif;
@@ -4846,49 +4885,53 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   margin-bottom: 30px;
   border-top: 1px solid #383838;
 }
-/* line 95, ../sass/template/_philosophie.scss */
+/* line 96, ../sass/template/_philosophie.scss */
 .tpl-philosophie .philo-half-block p, .tpl-philosophie .philo-half-block li {
   text-transform: none;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
   margin-bottom: 10px;
 }
-/* line 100, ../sass/template/_philosophie.scss */
+/* line 101, ../sass/template/_philosophie.scss */
 .tpl-philosophie .philo-half-block p b, .tpl-philosophie .philo-half-block li b {
   font-family: "AvenirLTPro-Medium", serif;
 }
-/* line 102, ../sass/template/_philosophie.scss */
+/* line 103, ../sass/template/_philosophie.scss */
+.tpl-philosophie .philo-half-block p {
+  text-align: justify;
+}
+/* line 106, ../sass/template/_philosophie.scss */
 .tpl-philosophie .philo-half-block p:last-child {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 112, ../sass/template/_philosophie.scss */
+/* line 116, ../sass/template/_philosophie.scss */
 .tpl-philosophie .content-fix-height .w_grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 1000px) {
-  /* line 112, ../sass/template/_philosophie.scss */
+  /* line 116, ../sass/template/_philosophie.scss */
   .tpl-philosophie .content-fix-height .w_grid {
     display: block;
   }
 }
-/* line 123, ../sass/template/_philosophie.scss */
+/* line 127, ../sass/template/_philosophie.scss */
 .tpl-philosophie .content-fix-height.reverseResponsive .w_grid {
   flex-direction: row-reverse;
 }
-/* line 125, ../sass/template/_philosophie.scss */
+/* line 129, ../sass/template/_philosophie.scss */
 .tpl-philosophie .content-fix-height .grid-col {
   position: relative;
   flex: 1;
 }
 @media screen and (max-width: 1000px) {
-  /* line 125, ../sass/template/_philosophie.scss */
+  /* line 129, ../sass/template/_philosophie.scss */
   .tpl-philosophie .content-fix-height .grid-col {
     flex: none;
   }
 }
-/* line 139, ../sass/template/_philosophie.scss */
+/* line 143, ../sass/template/_philosophie.scss */
 .tpl-philosophie #page-nav {
   position: absolute;
   top: 135px;
@@ -4898,26 +4941,26 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   z-index: 9999;
 }
 @media screen and (max-width: 1000px) {
-  /* line 139, ../sass/template/_philosophie.scss */
+  /* line 143, ../sass/template/_philosophie.scss */
   .tpl-philosophie #page-nav {
     display: none;
   }
 }
-/* line 151, ../sass/template/_philosophie.scss */
+/* line 155, ../sass/template/_philosophie.scss */
 .tpl-philosophie #page-nav .w_grid {
   position: relative;
 }
-/* line 153, ../sass/template/_philosophie.scss */
+/* line 157, ../sass/template/_philosophie.scss */
 .tpl-philosophie #page-nav a {
   color: #383838;
 }
-/* line 155, ../sass/template/_philosophie.scss */
+/* line 159, ../sass/template/_philosophie.scss */
 .tpl-philosophie #page-nav h1 {
   color: #383838;
   text-transform: uppercase;
   margin-bottom: 0;
 }
-/* line 162, ../sass/template/_philosophie.scss */
+/* line 166, ../sass/template/_philosophie.scss */
 .tpl-philosophie #page-nav ul {
   display: block;
   position: absolute;
@@ -4926,113 +4969,122 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   width: 100%;
   text-align: right;
 }
-/* line 170, ../sass/template/_philosophie.scss */
+/* line 174, ../sass/template/_philosophie.scss */
 .tpl-philosophie #page-nav ul li {
   display: inline-block;
   padding: 0 3%;
 }
-/* line 174, ../sass/template/_philosophie.scss */
+/* line 178, ../sass/template/_philosophie.scss */
 .tpl-philosophie #page-nav ul li a {
   font-family: "AvenirLTPro-Medium", serif;
   text-transform: uppercase;
   display: inline-block;
 }
-/* line 184, ../sass/template/_philosophie.scss */
+/* line 188, ../sass/template/_philosophie.scss */
 .tpl-philosophie #associees {
   overflow: hidden;
   padding: 10vh 0;
 }
-/* line 191, ../sass/template/_philosophie.scss */
+/* line 195, ../sass/template/_philosophie.scss */
 .tpl-philosophie #associees #ambassadors {
   padding-bottom: 0;
 }
-/* line 194, ../sass/template/_philosophie.scss */
+/* line 198, ../sass/template/_philosophie.scss */
 .tpl-philosophie #associees #ambassadors h4 {
   margin-bottom: 20px;
   font-size: 14px;
   text-transform: uppercase;
 }
-/* line 204, ../sass/template/_philosophie.scss */
+/* line 208, ../sass/template/_philosophie.scss */
 .tpl-philosophie #intro {
   position: relative;
   padding: 170px 0 10vh;
   background: #f2efea;
 }
 @media screen and (max-width: 1000px) {
-  /* line 204, ../sass/template/_philosophie.scss */
+  /* line 208, ../sass/template/_philosophie.scss */
   .tpl-philosophie #intro {
     padding: 10vh 0;
   }
 }
-/* line 213, ../sass/template/_philosophie.scss */
+/* line 216, ../sass/template/_philosophie.scss */
+.tpl-philosophie #intro .col_size-5 {
+  flex: none;
+}
+/* line 218, ../sass/template/_philosophie.scss */
 .tpl-philosophie #intro .bg-overlay {
   background-image: url(../img/bg/bg-enter.jpg);
   opacity: 0.3;
   z-index: 1;
 }
-/* line 219, ../sass/template/_philosophie.scss */
+/* line 224, ../sass/template/_philosophie.scss */
 .tpl-philosophie #intro .w_grid {
   position: relative;
   z-index: 3;
   overflow: hidden;
 }
-/* line 224, ../sass/template/_philosophie.scss */
+/* line 229, ../sass/template/_philosophie.scss */
 .tpl-philosophie #intro .philo-punchline {
   color: #5e5c4d;
 }
-/* line 229, ../sass/template/_philosophie.scss */
+/* line 233, ../sass/template/_philosophie.scss */
+.tpl-philosophie #intro .intro-video iframe, .tpl-philosophie #intro .intro-video video {
+  display: block;
+  width: 100%;
+}
+/* line 240, ../sass/template/_philosophie.scss */
 .tpl-philosophie #competences {
   padding: 10vh 0;
   background: #cbcead;
 }
-/* line 233, ../sass/template/_philosophie.scss */
+/* line 244, ../sass/template/_philosophie.scss */
 .tpl-philosophie #competences .philo-details-block {
   background: #5e5c4d;
 }
-/* line 234, ../sass/template/_philosophie.scss */
+/* line 245, ../sass/template/_philosophie.scss */
 .tpl-philosophie #competences .philo-punchline-block .philo-punchline {
   color: #979d5d;
 }
-/* line 237, ../sass/template/_philosophie.scss */
+/* line 248, ../sass/template/_philosophie.scss */
 .tpl-philosophie #solidaire {
   position: relative;
   padding: 10vh 0;
   background: #f2efea;
 }
-/* line 242, ../sass/template/_philosophie.scss */
+/* line 253, ../sass/template/_philosophie.scss */
 .tpl-philosophie #solidaire .bg-overlay {
   background-image: url(../img/bg/bg-solidaire.jpg);
   opacity: 0.2;
 }
-/* line 247, ../sass/template/_philosophie.scss */
+/* line 258, ../sass/template/_philosophie.scss */
 .tpl-philosophie #solidaire .philo-details-block {
   background: #ffffff;
 }
-/* line 250, ../sass/template/_philosophie.scss */
+/* line 261, ../sass/template/_philosophie.scss */
 .tpl-philosophie #solidaire .philo-details-block h4 {
   color: #979d5d;
   border-color: #979d5d;
 }
-/* line 254, ../sass/template/_philosophie.scss */
+/* line 265, ../sass/template/_philosophie.scss */
 .tpl-philosophie #solidaire .philo-details-block p {
   color: #383838;
 }
-/* line 257, ../sass/template/_philosophie.scss */
+/* line 268, ../sass/template/_philosophie.scss */
 .tpl-philosophie #solidaire .philo-punchline-block .philo-punchline {
   color: #5e5c4d;
 }
-/* line 260, ../sass/template/_philosophie.scss */
+/* line 271, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media {
   padding: 10vh 0;
   background: #cbcead;
   overflow: hidden;
 }
-/* line 269, ../sass/template/_philosophie.scss */
+/* line 280, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list {
   display: block;
   overflow: hidden;
 }
-/* line 273, ../sass/template/_philosophie.scss */
+/* line 284, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li {
   display: block;
   padding-bottom: 20px;
@@ -5040,11 +5092,11 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   border-bottom: 1px solid #5e5c4d;
   overflow: hidden;
 }
-/* line 280, ../sass/template/_philosophie.scss */
+/* line 291, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li:last-child {
   border-bottom: 0;
 }
-/* line 284, ../sass/template/_philosophie.scss */
+/* line 295, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-cover {
   position: relative;
   display: block;
@@ -5054,17 +5106,17 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   height: auto;
   margin-right: 7%;
 }
-/* line 293, ../sass/template/_philosophie.scss */
+/* line 304, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-cover a {
   display: block;
 }
-/* line 296, ../sass/template/_philosophie.scss */
+/* line 307, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-cover a img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 302, ../sass/template/_philosophie.scss */
+/* line 313, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-cover .label {
   display: block;
   position: absolute;
@@ -5074,21 +5126,21 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   text-transform: uppercase;
   background: #383838;
 }
-/* line 311, ../sass/template/_philosophie.scss */
+/* line 322, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-cover .label a {
   color: #ffffff;
 }
-/* line 315, ../sass/template/_philosophie.scss */
+/* line 326, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-text {
   padding-top: 20px;
 }
-/* line 318, ../sass/template/_philosophie.scss */
+/* line 329, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-text h4 {
   text-transform: none;
   font-family: "AvenirLTPro-Heavy", Verdana, sans-serif;
   margin-bottom: 30px;
 }
-/* line 324, ../sass/template/_philosophie.scss */
+/* line 335, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-text h4 span {
   display: block;
   float: right;
@@ -5096,37 +5148,37 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   margin-bottom: 10px;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
 }
-/* line 332, ../sass/template/_philosophie.scss */
+/* line 343, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .article-list li .article-text p {
   text-transform: none;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
   font-style: italic;
 }
 @media screen and (max-width: 700px) {
-  /* line 332, ../sass/template/_philosophie.scss */
+  /* line 343, ../sass/template/_philosophie.scss */
   .tpl-philosophie #media .article-list li .article-text p {
     display: none;
   }
 }
-/* line 346, ../sass/template/_philosophie.scss */
+/* line 357, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .last-video {
   margin-bottom: 50px;
 }
-/* line 349, ../sass/template/_philosophie.scss */
+/* line 360, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .last-video .video-container {
   margin-bottom: 20px;
   background: #000000;
 }
-/* line 353, ../sass/template/_philosophie.scss */
+/* line 364, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media .last-video .video-container img, .tpl-philosophie #media .last-video .video-container iframe, .tpl-philosophie #media .last-video .video-container video {
   display: block;
   width: 100%;
 }
-/* line 359, ../sass/template/_philosophie.scss */
+/* line 370, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media #publications {
   margin-bottom: 50px;
 }
-/* line 362, ../sass/template/_philosophie.scss */
+/* line 373, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media #publications li, .tpl-philosophie #media #publications li a {
   text-transform: none;
   font-family: "AvenirLTPro-Book", Verdana, sans-serif;
@@ -5134,12 +5186,12 @@ header#header.header-front #responsive_header #responsive-show-menu.responsive-s
   margin-bottom: 5px;
   color: #000000;
 }
-/* line 369, ../sass/template/_philosophie.scss */
+/* line 380, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media #publications li b, .tpl-philosophie #media #publications li a b {
   font-family: "AvenirLTPro-Heavy", Verdana, sans-serif;
   font-style: normal;
 }
-/* line 377, ../sass/template/_philosophie.scss */
+/* line 388, ../sass/template/_philosophie.scss */
 .tpl-philosophie #media #presse .button {
   margin-bottom: 30px;
 }
@@ -8541,6 +8593,10 @@ Style annonces middle office
 #annonces_middle_office .infos_bien .button.edit_annonce {
   bottom: 105px;
 }
+/* line 225, ../sass/template/_middle-office-annonces-list.scss */
+#annonces_middle_office .infos_bien .button.diffuse_annonce {
+  color: #000000 !important;
+}
 @media screen and (max-width: 1000px) {
   /* line 213, ../sass/template/_middle-office-annonces-list.scss */
   #annonces_middle_office .infos_bien .button {
@@ -8556,7 +8612,7 @@ Style annonces middle office
     padding: 0 10px;
   }
 }
-/* line 290, ../sass/template/_middle-office-annonces-list.scss */
+/* line 291, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien {
   overflow: hidden;
   float: left;
@@ -8565,14 +8621,14 @@ Style annonces middle office
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1000px) {
-  /* line 290, ../sass/template/_middle-office-annonces-list.scss */
+  /* line 291, ../sass/template/_middle-office-annonces-list.scss */
   #annonces_middle_office .details_bien {
     float: none;
     width: 100%;
     margin-bottom: 25px;
   }
 }
-/* line 303, ../sass/template/_middle-office-annonces-list.scss */
+/* line 304, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .button {
   float: right;
   height: 20px;
@@ -8582,31 +8638,31 @@ Style annonces middle office
   font-size: 10px;
 }
 @media screen and (max-width: 700px) {
-  /* line 303, ../sass/template/_middle-office-annonces-list.scss */
+  /* line 304, ../sass/template/_middle-office-annonces-list.scss */
   #annonces_middle_office .details_bien .button {
     padding: 0 10px;
   }
 }
-/* line 318, ../sass/template/_middle-office-annonces-list.scss */
+/* line 319, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien:hover .annonce-title {
   color: #5e5c4d;
 }
-/* line 321, ../sass/template/_middle-office-annonces-list.scss */
+/* line 322, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien:hover .annonce-title a {
   color: #5e5c4d;
 }
-/* line 326, ../sass/template/_middle-office-annonces-list.scss */
+/* line 327, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien:hover .annonce-cover .annonce-hover-bar {
   width: 100%;
 }
-/* line 332, ../sass/template/_middle-office-annonces-list.scss */
+/* line 333, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien:hover img {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 338, ../sass/template/_middle-office-annonces-list.scss */
+/* line 339, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-cover {
   position: relative;
   margin-bottom: 20px;
@@ -8616,24 +8672,24 @@ Style annonces middle office
   -o-transition: transform 250ms;
   transition: transform 250ms;
 }
-/* line 344, ../sass/template/_middle-office-annonces-list.scss */
+/* line 345, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-cover a {
   display: block;
 }
-/* line 347, ../sass/template/_middle-office-annonces-list.scss */
+/* line 348, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-cover a img {
   display: block;
   width: 100%;
   transition: all 550ms;
 }
 @media screen and (max-width: 1000px) {
-  /* line 347, ../sass/template/_middle-office-annonces-list.scss */
+  /* line 348, ../sass/template/_middle-office-annonces-list.scss */
   #annonces_middle_office .details_bien .annonce-cover a img {
     width: inherit;
     max-width: 100%;
   }
 }
-/* line 358, ../sass/template/_middle-office-annonces-list.scss */
+/* line 359, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-cover a span {
   display: block;
   position: absolute;
@@ -8644,7 +8700,7 @@ Style annonces middle office
   padding: 6px 45px 6px 9px;
   background: #383838;
 }
-/* line 368, ../sass/template/_middle-office-annonces-list.scss */
+/* line 369, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-cover a span::after {
   content: "";
   display: block;
@@ -8659,7 +8715,7 @@ Style annonces middle office
   transform: translateY(-55%);
   background: url("../img/ico/ico-360.jpg") no-repeat center center transparent;
 }
-/* line 384, ../sass/template/_middle-office-annonces-list.scss */
+/* line 385, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-cover .annonce-hover-bar {
   display: block;
   width: 0;
@@ -8673,7 +8729,7 @@ Style annonces middle office
   transition: all 350ms;
   background: #979d5d;
 }
-/* line 397, ../sass/template/_middle-office-annonces-list.scss */
+/* line 398, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-title {
   width: 70%;
   float: left;
@@ -8688,27 +8744,27 @@ Style annonces middle office
   transition: all 250ms;
   color: #383838;
 }
-/* line 408, ../sass/template/_middle-office-annonces-list.scss */
+/* line 409, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-title a {
   color: #383838;
 }
-/* line 414, ../sass/template/_middle-office-annonces-list.scss */
+/* line 415, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-primary {
   float: right;
   width: 30%;
   text-align: right;
   margin-bottom: 12px;
 }
-/* line 420, ../sass/template/_middle-office-annonces-list.scss */
+/* line 421, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-primary .annonce-city {
   font-family: "AvenirLTPro-Heavy", Verdana, sans-serif;
   text-transform: uppercase;
 }
-/* line 427, ../sass/template/_middle-office-annonces-list.scss */
+/* line 428, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-secondary, #annonces_middle_office .details_bien .annonce-complementary {
   clear: both;
 }
-/* line 433, ../sass/template/_middle-office-annonces-list.scss */
+/* line 434, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-secondary li, #annonces_middle_office .details_bien .annonce-complementary li {
   display: inline-block;
   padding: 0 8px 0 0;
@@ -8716,36 +8772,36 @@ Style annonces middle office
   margin-bottom: 5px;
   border-right: 1px solid #383838;
 }
-/* line 440, ../sass/template/_middle-office-annonces-list.scss */
+/* line 441, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-secondary li:first-child, #annonces_middle_office .details_bien .annonce-complementary li:first-child {
   padding-left: 0;
 }
-/* line 444, ../sass/template/_middle-office-annonces-list.scss */
+/* line 445, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-secondary li:last-child, #annonces_middle_office .details_bien .annonce-complementary li:last-child {
   padding-right: 0;
   border-right: 0;
 }
-/* line 451, ../sass/template/_middle-office-annonces-list.scss */
+/* line 452, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary {
   vertical-align: middle;
 }
-/* line 453, ../sass/template/_middle-office-annonces-list.scss */
+/* line 454, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary span {
   vertical-align: middle;
 }
-/* line 455, ../sass/template/_middle-office-annonces-list.scss */
+/* line 456, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary.complementary {
   float: left;
   width: 70%;
   margin-top: 15px;
 }
-/* line 462, ../sass/template/_middle-office-annonces-list.scss */
+/* line 463, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary ul.star-notation, #annonces_middle_office .details_bien .annonce-complementary ul.key-notation {
   display: inline-block;
   vertical-align: middle;
   padding-left: 8px;
 }
-/* line 467, ../sass/template/_middle-office-annonces-list.scss */
+/* line 468, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary ul.star-notation li, #annonces_middle_office .details_bien .annonce-complementary ul.key-notation li {
   display: block;
   float: left;
@@ -8757,60 +8813,60 @@ Style annonces middle office
   margin-right: 5px;
   background: transparent url(../img/ico/sprite-annonce-infos.png) top left no-repeat;
 }
-/* line 478, ../sass/template/_middle-office-annonces-list.scss */
+/* line 479, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary ul.star-notation li.star-off, #annonces_middle_office .details_bien .annonce-complementary ul.key-notation li.star-off {
   background-position: top right;
 }
-/* line 482, ../sass/template/_middle-office-annonces-list.scss */
+/* line 483, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary ul.star-notation li.key-on, #annonces_middle_office .details_bien .annonce-complementary ul.key-notation li.key-on {
   background-position: bottom left;
 }
-/* line 486, ../sass/template/_middle-office-annonces-list.scss */
+/* line 487, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary ul.star-notation li.key-float, #annonces_middle_office .details_bien .annonce-complementary ul.key-notation li.key-float {
   background-position: -12px bottom;
 }
-/* line 490, ../sass/template/_middle-office-annonces-list.scss */
+/* line 491, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .details_bien .annonce-complementary ul.star-notation li.key-off, #annonces_middle_office .details_bien .annonce-complementary ul.key-notation li.key-off {
   background-position: bottom right;
 }
-/* line 500, ../sass/template/_middle-office-annonces-list.scss */
+/* line 501, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .presentation_bien {
   float: left;
   width: 25%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 500, ../sass/template/_middle-office-annonces-list.scss */
+  /* line 501, ../sass/template/_middle-office-annonces-list.scss */
   #annonces_middle_office .presentation_bien {
     padding-left: 33px;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 500, ../sass/template/_middle-office-annonces-list.scss */
+  /* line 501, ../sass/template/_middle-office-annonces-list.scss */
   #annonces_middle_office .presentation_bien {
     float: none;
     width: 100%;
     padding-left: 0;
   }
 }
-/* line 514, ../sass/template/_middle-office-annonces-list.scss */
+/* line 515, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .presentation_bien .adresse {
   color: #ffffff;
   margin-bottom: 10px;
 }
-/* line 518, ../sass/template/_middle-office-annonces-list.scss */
+/* line 519, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .presentation_bien .adresse p {
   margin-bottom: 0;
   font-size: 18px;
   line-height: 1.2;
 }
 @media screen and (max-width: 1000px) {
-  /* line 518, ../sass/template/_middle-office-annonces-list.scss */
+  /* line 519, ../sass/template/_middle-office-annonces-list.scss */
   #annonces_middle_office .presentation_bien .adresse p {
     display: inline-block;
     margin-right: 15px;
   }
 }
-/* line 529, ../sass/template/_middle-office-annonces-list.scss */
+/* line 530, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .presentation_bien .lire_la_suite {
   cursor: pointer;
   position: absolute;
@@ -8826,29 +8882,29 @@ Style annonces middle office
   width: 15px;
   transition: .5s;
 }
-/* line 544, ../sass/template/_middle-office-annonces-list.scss */
+/* line 545, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .presentation_bien .lire_la_suite.open {
   transform: rotate(-45deg);
 }
-/* line 548, ../sass/template/_middle-office-annonces-list.scss */
+/* line 549, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .presentation_bien p, #annonces_middle_office .presentation_bien .extrait {
   font-size: 14px;
   margin-bottom: 10px;
 }
-/* line 552, ../sass/template/_middle-office-annonces-list.scss */
+/* line 553, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .presentation_bien .full_text {
   display: none;
 }
-/* line 559, ../sass/template/_middle-office-annonces-list.scss */
+/* line 560, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .acf-form .acf-field-59088607dfe53 {
   width: 74%;
 }
-/* line 561, ../sass/template/_middle-office-annonces-list.scss */
+/* line 562, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .acf-form .acf-field-59088607dfe53 .acf-input-append {
   background: transparent;
   border: 0;
 }
-/* line 566, ../sass/template/_middle-office-annonces-list.scss */
+/* line 567, ../sass/template/_middle-office-annonces-list.scss */
 #annonces_middle_office .acf-form .acf-field-number input {
   -moz-appearance: textfield;
 }

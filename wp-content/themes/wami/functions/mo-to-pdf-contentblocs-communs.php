@@ -325,11 +325,11 @@ function get_pdf_signature_mandats($type_mandat=false){
             <tr>                
                 <td class="signature_cadre">
                     <p class="ligne_simple_bas bold"><?= $le_proprietaire; ?> :</p>
-                    <p class="ligne_simple">Signature précédée de la mention manuscrite « lu et approuvé, mandat accepté »</p>
+                    <p class="ligne_simple">Signature précédée de la mention manuscrite « Lu et accepté, bon pour mandat »</p>
                 </td>
                 <td class="signature_cadre">
                    <p class="ligne_simple_bas bold">L'agence :</p>
-                    <p class="ligne_simple">Signature précédée de la mention manuscrite « lu et approuvé, mandat accepté »</p>                   
+                    <p class="ligne_simple">Signature précédée de la mention manuscrite « Lu et approuvé, mandat accepté »</p>                   
                 </td>
             </tr>
         </table>

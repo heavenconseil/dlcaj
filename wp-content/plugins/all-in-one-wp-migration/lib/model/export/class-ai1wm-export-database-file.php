@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2020 ServMask Inc.
+ * Copyright (C) 2014-2017 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,10 +23,6 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	die( 'Kangaroos cannot jump here' );
-}
-
 class Ai1wm_Export_Database_File {
 
 	public static function execute( $params ) {
@@ -37,13 +33,6 @@ class Ai1wm_Export_Database_File {
 		}
 
 		$database_bytes_written = 0;
-
-		// Set archive bytes offset
-		if ( isset( $params['archive_bytes_offset'] ) ) {
-			$archive_bytes_offset = (int) $params['archive_bytes_offset'];
-		} else {
-			$archive_bytes_offset = ai1wm_archive_bytes( $params );
-		}
 
 		// Set database bytes offset
 		if ( isset( $params['database_bytes_offset'] ) ) {
@@ -56,7 +45,7 @@ class Ai1wm_Export_Database_File {
 		if ( isset( $params['total_database_size'] ) ) {
 			$total_database_size = (int) $params['total_database_size'];
 		} else {
-			$total_database_size = ai1wm_database_bytes( $params );
+			$total_database_size = 1;
 		}
 
 		// What percent of database have we processed?
@@ -65,20 +54,14 @@ class Ai1wm_Export_Database_File {
 		// Set progress
 		Ai1wm_Status::info( sprintf( __( 'Archiving database...<br />%d%% complete', AI1WM_PLUGIN_NAME ), $progress ) );
 
-		// Open the archive file for writing
+		// Get archive
 		$archive = new Ai1wm_Compressor( ai1wm_archive_path( $params ) );
 
-		// Set the file pointer to the one that we have saved
-		$archive->set_file_pointer( $archive_bytes_offset );
-
-		// Add database.sql to archive
-		if ( $archive->add_file( ai1wm_database_path( $params ), AI1WM_DATABASE_NAME, $database_bytes_written, $database_bytes_offset ) ) {
+		// Add file to archive
+		if ( $archive->add_file( ai1wm_database_path( $params ), AI1WM_DATABASE_NAME, $database_bytes_written, $database_bytes_offset, 10 ) ) {
 
 			// Set progress
 			Ai1wm_Status::info( __( 'Done archiving database.', AI1WM_PLUGIN_NAME ) );
-
-			// Unset archive bytes offset
-			unset( $params['archive_bytes_offset'] );
 
 			// Unset database bytes offset
 			unset( $params['database_bytes_offset'] );
@@ -91,17 +74,14 @@ class Ai1wm_Export_Database_File {
 
 		} else {
 
-			// Get archive bytes offset
-			$archive_bytes_offset = $archive->get_file_pointer();
+			// Get total database size
+			$total_database_size = ai1wm_database_bytes( $params );
 
 			// What percent of database have we processed?
 			$progress = (int) min( ( $database_bytes_offset / $total_database_size ) * 100, 100 );
 
 			// Set progress
 			Ai1wm_Status::info( sprintf( __( 'Archiving database...<br />%d%% complete', AI1WM_PLUGIN_NAME ), $progress ) );
-
-			// Set archive bytes offset
-			$params['archive_bytes_offset'] = $archive_bytes_offset;
 
 			// Set database bytes offset
 			$params['database_bytes_offset'] = $database_bytes_offset;
@@ -112,9 +92,6 @@ class Ai1wm_Export_Database_File {
 			// Set completed flag
 			$params['completed'] = false;
 		}
-
-		// Truncate the archive file
-		$archive->truncate();
 
 		// Close the archive file
 		$archive->close();

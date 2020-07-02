@@ -50,7 +50,7 @@ class wami_manage_registre_mandats_table extends WP_List_Table {
     function prepare_items() {
         global $wpdb; //This is used only if making any database queries
 
-        $per_page = 100;
+        $per_page = 10;
         
         $columns = $this->get_columns();
         $hidden = array();
@@ -78,8 +78,7 @@ class wami_manage_registre_mandats_table extends WP_List_Table {
         function usort_reorder($a,$b){
             $orderby = (!empty($_REQUEST['orderby'])) ? sanitize_text_field($_REQUEST['orderby']) : 'mandat_numero'; //If no sort, default to title
             $order = (!empty($_REQUEST['order'])) ? sanitize_text_field($_REQUEST['order']) : 'asc'; //If no order, default to asc
-            $result = strnatcmp($a[$orderby], $b[$orderby]); //Determine sort order
-            //ici strnatcmp au lieu de strcmp pour le numéric !
+            $result = strcmp($a[$orderby], $b[$orderby]); //Determine sort order
             return ($order==='desc') ? $result : -$result; //Send final sort direction to usort
         }
         usort($data, 'usort_reorder');        

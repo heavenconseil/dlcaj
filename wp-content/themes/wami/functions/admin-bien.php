@@ -38,7 +38,7 @@ function my_column_orderby_ref( $vars ) {
     if ( isset( $vars['orderby'] ) && 'linked_issue_post' == $vars['orderby'] ) {       
         $vars = array_merge( $vars, array(
             'meta_key' => 'bien_ref',
-            'orderby' => 'meta_value'
+            'orderby' => 'meta_value_num'
         ) );
     }
     return $vars;
